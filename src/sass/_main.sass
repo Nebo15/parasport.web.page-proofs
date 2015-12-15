@@ -283,8 +283,126 @@
 			padding: 20px 24px
 			font-size: 18px 	
 		
-
-
+.m-news
+	padding: 30px 0 
+	.center
+		padding: 0
+.tabs
+	.tabs__topper
+		font-size: 0
+		padding: 0 10px
+		margin-bottom: 40px
+	.tabs__title
+		display: inline-block
+		vertical-align: middle
+		width: 150px
+		font-size: 22px
+		color: #929292
+		text-transform: uppercase
+		+opensans-sb
+	.tabs__nav
+		display: inline-block
+		vertical-align: middle
+		li
+			display: inline-block
+			vertical-align: middle
+			margin-left: 5px
+	.tabs__link
+		display: block
+		height: 62px
+		width: 190px 
+		border-radius: 4px
+		background: #ebebeb
+		transition: background 200ms
+		text-align: center
+		+vertical
+		text-decoration: none
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 14px
+			color: #353535
+			+opensans-sb
+		&:hover
+			background: $green
+		&:focus, &.active
+			+gradient
+			span
+				color: #fff
+				+opensans-eb 	  
+.item-wrap
+	+clr
+	margin-left: -3px
+	.item-col
+		float: left
+		margin-left: 3px
+.item
+	position: relative
+	width: 296px
+	overflow: hidden
+	margin-top: 3px
+	background: #ebebeb
+	border-radius: 4px
+	.item__img
+		height: 203px
+		overflow: hidden
+		background: url(../img/placeholder.png) center no-repeat
+		img
+			display: block
+			width: 100%
+			height: auto
+			min-height: 100%
+	.item__content
+		position: relative
+		height: 200px
+		padding: 10px 10px 45px 10px
+	.item__title
+		font-size: 16px
+		color: #323232
+		text-decoration: none
+		strong
+			+opensans-sb
+	.item__bottom
+		position: absolute
+		bottom: 10px
+		left: 10px
+		right: 10px
+.item-more
+	padding-top: 20px
+	text-align: center 		
+.tags
+	font-size: 0
+	span
+		display: inline-block
+		vertical-align: middle
+		margin-right: 18px
+		font-size: 14px
+		color: #787878 		
+	ul
+		display: inline-block
+		vertical-align: middle
+		li
+			display: inline-block
+			vertical-align: middle
+			margin-left: 8px
+			&:first-child
+				margin-left: 0 
+			a
+				display: block
+				border-radius: 8px
+				background: #fff
+				padding: 5px 15px
+				font-size: 14px
+				color: #787878
+				+opensans-sb
+				text-decoration: none
+				transition: background 200ms, color 200ms
+				&:hover
+					background: $green
+					color: #fff      			
+.date
+	font-size: 14px
+	color: #929292 				 		   	 
 
 
 

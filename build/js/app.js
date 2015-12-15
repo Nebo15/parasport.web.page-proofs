@@ -50,4 +50,15 @@ $(document).ready(function() {
 		$('.js-quotes').slick('slickNext');
 	});
 
+	// carousel
+
+	$('.js-carousel').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		arrows: false,
+		fade: true,
+		adaptiveHeight: true
+	});
+
 });

@@ -120,12 +120,39 @@ body
 	+opensans-eb
 	text-transform: uppercase
 	color: #fff
-	transition: background 1000ms
+	transition: background 200ms
 	&:hover
 		background: $green  			
 
-
-
+.more
+	width: 161px
+	height: 53px
+	background: #fff
+	border-radius: 26px
+	border: 2px solid #ebebeb
+	transition: background 200ms
+	vertical-align: middle
+	font-size: 0
+	+opensans-sb
+	color: #464646
+	span, i
+		display: inline-block
+		vertical-align: middle
+		transition: color 200ms
+	span
+		position: relative
+		top: -2px
+		font-size: 14px
+	i
+		margin-left: 25px
+		font-size: 20px
+		color: #464646 	
+	&:hover
+		background: $green
+		i, span
+			color: #fff
+	&:focus
+		+gradient		  
 
 
 
