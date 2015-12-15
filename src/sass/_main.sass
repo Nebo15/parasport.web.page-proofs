@@ -399,14 +399,71 @@
 .date
 	font-size: 14px
 	color: #929292 				 		   	 
-
-
-
-
-
-
-
-
+.events
+	background: #e6edf6
+	padding: 50px 0 
+	.events__in
+		position: relative
+		max-width: 1500px
+		padding: 0 10px
+		margin: 0 auto  
+.chronology
+	position: relative
+	padding: 150px 0
+	+clr
+	&:before
+		content: ""
+		position: absolute
+		top: 220px
+		left: 0
+		right: 0
+		height: 5px
+		background-image: linear-gradient(to right, #3cafe2 0%, #2e3192 100%)  
+	.chronology__year
+		position: relative
+		float: left
+		margin-left: 5.5%
+		.main-event
+			text-align: center
+			.main-event__title	
+				width: 150px
+				height: 150px
+				padding: 0 20px 
+				border-radius: 50%
+				margin-bottom: 10px
+				+vertical
+				span
+					display: inline-block
+					vertical-align: middle
+					font-size: 16px
+					color: #fff 
+			.main-event__year
+				font-size: 30px
+				color: #6c6c6c 	
+		&:nth-child(1)
+			.main-event	
+				.main-event__title
+					background-image: linear-gradient(to right, #2aa5de 0%, #2a99d6 100%)	
+		&:nth-child(2)
+			.main-event	
+				.main-event__title
+					background-image: linear-gradient(to right, #2a92d2 0%, #2b86ca 100%)
+		&:nth-child(3)
+			.main-event	
+				.main-event__title
+					background-image: linear-gradient(to right, #2b7fc5 0%, #2b74be 100%)
+		&:nth-child(4)
+			.main-event	
+				.main-event__title
+					background-image: linear-gradient(to right, #2c6db9 0%, #2c60b1 100%)
+		&:nth-child(5)
+			.main-event	
+				.main-event__title
+					background-image: linear-gradient(to right, #2c5aad 0%, #2d4ea5 100%)
+		&:nth-child(6)
+			.main-event	
+				.main-event__title
+					background-image: linear-gradient(to right, #2d47a1 0%, #2e3b99 100%)
 
 
 

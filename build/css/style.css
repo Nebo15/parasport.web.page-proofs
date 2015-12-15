@@ -217,9 +217,26 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 
 .date { font-size: 14px; color: #929292; }
 
+.events { background: #e6edf6; padding: 50px 0; }
+.events .events__in { position: relative; max-width: 1500px; padding: 0 10px; margin: 0 auto; }
+
+.chronology { position: relative; padding: 150px 0; *zoom: 1; }
+.chronology:after { content: " "; display: table; clear: both; }
+.chronology:before { content: ""; position: absolute; top: 220px; left: 0; right: 0; height: 5px; background-image: -webkit-gradient(linear, left top, right top, from(#3cafe2), to(#2e3192)); background-image: -webkit-linear-gradient(left, #3cafe2 0%, #2e3192 100%); background-image: linear-gradient(to right, #3cafe2 0%, #2e3192 100%); }
+.chronology .chronology__year { position: relative; float: left; margin-left: 5.5%; }
+.chronology .chronology__year .main-event { text-align: center; }
+.chronology .chronology__year .main-event .main-event__title { width: 150px; height: 150px; padding: 0 20px; -webkit-border-radius: 50%; border-radius: 50%; margin-bottom: 10px; text-align: center; font-size: 0; }
+.chronology .chronology__year .main-event .main-event__title:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.chronology .chronology__year .main-event .main-event__title span { display: inline-block; vertical-align: middle; font-size: 16px; color: #fff; }
+.chronology .chronology__year .main-event .main-event__year { font-size: 30px; color: #6c6c6c; }
+.chronology .chronology__year:nth-child(1) .main-event .main-event__title { background-image: -webkit-gradient(linear, left top, right top, from(#2aa5de), to(#2a99d6)); background-image: -webkit-linear-gradient(left, #2aa5de 0%, #2a99d6 100%); background-image: linear-gradient(to right, #2aa5de 0%, #2a99d6 100%); }
+.chronology .chronology__year:nth-child(2) .main-event .main-event__title { background-image: -webkit-gradient(linear, left top, right top, from(#2a92d2), to(#2b86ca)); background-image: -webkit-linear-gradient(left, #2a92d2 0%, #2b86ca 100%); background-image: linear-gradient(to right, #2a92d2 0%, #2b86ca 100%); }
+.chronology .chronology__year:nth-child(3) .main-event .main-event__title { background-image: -webkit-gradient(linear, left top, right top, from(#2b7fc5), to(#2b74be)); background-image: -webkit-linear-gradient(left, #2b7fc5 0%, #2b74be 100%); background-image: linear-gradient(to right, #2b7fc5 0%, #2b74be 100%); }
+.chronology .chronology__year:nth-child(4) .main-event .main-event__title { background-image: -webkit-gradient(linear, left top, right top, from(#2c6db9), to(#2c60b1)); background-image: -webkit-linear-gradient(left, #2c6db9 0%, #2c60b1 100%); background-image: linear-gradient(to right, #2c6db9 0%, #2c60b1 100%); }
+.chronology .chronology__year:nth-child(5) .main-event .main-event__title { background-image: -webkit-gradient(linear, left top, right top, from(#2c5aad), to(#2d4ea5)); background-image: -webkit-linear-gradient(left, #2c5aad 0%, #2d4ea5 100%); background-image: linear-gradient(to right, #2c5aad 0%, #2d4ea5 100%); }
+.chronology .chronology__year:nth-child(6) .main-event .main-event__title { background-image: -webkit-gradient(linear, left top, right top, from(#2d47a1), to(#2e3b99)); background-image: -webkit-linear-gradient(left, #2d47a1 0%, #2e3b99 100%); background-image: linear-gradient(to right, #2d47a1 0%, #2e3b99 100%); }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
-
 @media only screen and (max-width: 1400px){
  .menu .menu__link{ padding: 4px 30px; } }
 
