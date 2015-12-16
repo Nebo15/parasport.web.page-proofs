@@ -23,7 +23,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 *, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.icon, [class^="icon-"], [class*=" icon-"], .slider .slick-next:before, .slider .slick-prev:before { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.icon, [class^="icon-"], [class*=" icon-"], .slider .slick-next:before, .slider .slick-prev:before, .breadcrumbs ul li:before { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
 
@@ -360,6 +360,21 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 
 .m-gallery { padding: 35px 0 65px; background: #e6edf6; }
 .m-gallery .title { margin-bottom: 40px; }
+
+.container { position: relative; padding-top: 145px; background: url(../img/topper-bg.jpg) no-repeat; background-size: 100% auto; }
+.container .main { *zoom: 1; max-width: 1200px; margin: 0 auto; background: #fff; }
+.container .main:after { content: " "; display: table; clear: both; }
+.container .content { overflow: hidden; padding-left: 20px; }
+.container .sidebar { float: right; width: 286px; padding: 0 20px; }
+
+.breadcrumbs { clear: both; padding: 7px 20px; }
+.breadcrumbs ul { font-size: 0; }
+.breadcrumbs ul li { position: relative; display: inline-block; vertical-align: middle; margin-left: 8px; }
+.breadcrumbs ul li:before { content: ""; margin-right: 8px; font-size: 10px; }
+.breadcrumbs ul li:first-child { margin-left: 0; }
+.breadcrumbs ul li:first-child:before { display: none; }
+.breadcrumbs ul li a { font-size: 14px; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; color: #646464; text-decoration: none; }
+.breadcrumbs ul li a:hover { text-decoration: underline; }
 
 .gallery { position: relative; overflow: auto; }
 .gallery__list { white-space: nowrap; font-size: 0; }
