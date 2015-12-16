@@ -3,6 +3,25 @@
 .gallery
 	position: relative
 	overflow: auto
+	&__head
+		background-size: cover
+		background-position: 50% 50%
+		&-wrap
+			height: 330px
+			background: rgba(#000,.5)
+			+vertical
+		&-title
+			display: inline-block
+			+opensans-sb
+			font-size: 46px
+			color: #FFF
+			text-transform: uppercase
+			vertical-align: middle
+		&-bc
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 20px 
 	&__list
 		white-space: nowrap
 		font-size: 0
@@ -15,11 +34,16 @@
 		&:nth-child(4n+1)
 			margin-top: 150px
 	&__item
-		display: block
 		position: relative
+	&__link
+		display: block
 		width: 387px
 		height: 340px
 		margin-bottom: 4px
+	&__link:hover &__play
+		opacity: 0 
+	&__link:hover &__plus
+		opacity: 1
 	&__pic
 		display: block
 		max-width: 100%
@@ -48,7 +72,8 @@
 		border-radius: 50%
 		background: rgba(#000,.6)
 		+vertical
-		color: #fff 
+		color: #fff
+		transition: opacity .2s
 		.icon
 			font-size: 50px
 			vertical-align: middle
@@ -67,3 +92,108 @@
 		.icon
 			font-size: 70px
 			vertical-align: middle
+
+.albums
+	&__list
+		margin: 0 -2px
+		font-size: 0
+	&__item
+		display: inline-block
+		position: relative
+		width: 292px
+		margin: 0 2px 4px
+		vertical-align: top
+	&__link
+		display: block
+		background: #EBEBEB 
+		border-radius: 4px
+		text-decoration: none
+		transition: background .2s
+		&:hover
+			background: #D8D8D8
+	&__link:hover &__plus
+		opacity: 1
+	&__preview
+		position: relative
+		height: 200px
+	&__plus
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		border-radius: 4px 4px 0 0
+		background: rgba(#d8d8d8,.6)
+		+vertical
+		color: #fff
+		opacity: 0
+		transition: opacity .2s 
+		.icon
+			font-size: 70px
+			vertical-align: middle
+	&__pic
+		display: block
+		max-width: 100%
+		border-radius: 4px 4px 0 0
+	&__info
+		padding: 10px
+		min-height: 170px
+		+opensans-sb
+		line-height: 1.375 
+	&__title
+		margin-bottom: 5px
+		font-size: 16px
+		color: #323232
+	&__meta
+		font-size: 0
+		&-item
+			display: inline
+			margin-right: 10px
+			font-size: 14px
+			color: #929292
+			&:last-child
+				&:after
+					display: none
+			&:after
+				content: ""
+				display: inline-block
+				width: 4px
+				height: 4px
+				margin-left: 10px
+				background: #929292
+				border-radius: 50% 
+				vertical-align: middle
+	&__share
+		position: absolute
+		top: 0
+		right: 0
+		width: 40px
+		height: 40px
+		border-radius: 0 4px 0 0
+		background: #2E4F82 
+		+vertical
+		color: #fff
+		transition: all .2s
+		z-index: 2
+		.icon
+			font-size: 20px 
+			vertical-align: middle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
