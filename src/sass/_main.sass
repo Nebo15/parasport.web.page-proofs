@@ -409,7 +409,7 @@
 		margin: 0 auto  
 .chronology
 	position: relative
-	padding: 150px 0
+	padding: 150px 0 50px
 	+clr
 	&:before
 		content: ""
@@ -418,11 +418,13 @@
 		left: 0
 		right: 0
 		height: 5px
-		background-image: linear-gradient(to right, #3cafe2 0%, #2e3192 100%)  
+		background-image: linear-gradient(to right, #e6edf6 0%, #3cafe2 5%, #2e3192 100%)  
+		z-index: 1
 	.chronology__year
 		position: relative
 		float: left
 		margin-left: 5.5%
+		z-index: 2
 		.main-event
 			text-align: center
 			.main-event__title	
@@ -439,31 +441,315 @@
 					color: #fff 
 			.main-event__year
 				font-size: 30px
-				color: #6c6c6c 	
+				color: #6c6c6c
+		.event
+			.clr
+				position: relative
+				margin-top: 20px
+				&:first-child
+					margin-top: 0 
+				.event__line
+					position: absolute
+					top: 75px
+					left: 38px
+					width: 2px
+					background: #cdd5e0
+					height: 25px 	
+			.round
+				background: #cdd5e0
+				span
+					font-size: 20px
+					+opensans-sb
+					color: #6c6c6c 
+			.event__text
+				font-size: 16px
+				color: #737373
+				strong
+					+opensans-sb	 		 	
 		&:nth-child(1)
 			.main-event	
 				.main-event__title
 					background-image: linear-gradient(to right, #2aa5de 0%, #2a99d6 100%)	
+			.event
+				position: relative
+				padding-top: 20px
+				margin-left: -40px
+				.event__line
+					position: absolute
+					top: 21px
+					left: 60px
+					width: 30px
+					height: 2px
+					background: #cdd5e0
+					transform: rotate(-45deg)  
+				.round
+					margin-bottom: 5px 
+				.event__text 
+					margin-left: -20px 
 		&:nth-child(2)
 			.main-event	
 				.main-event__title
 					background-image: linear-gradient(to right, #2a92d2 0%, #2b86ca 100%)
+			.event
+				position: absolute
+				top: -110px
+				left: -70px
+				width: 260px
+				+clr
+				.round
+					float: left
+					margin-right: 10px
+				.event__text
+					overflow: hidden
+				.event__line
+					position: absolute
+					top: 76px
+					left: 38px
+					height: 70px
+					width: 2px
+					background: #cdd5e0 
 		&:nth-child(3)
-			.main-event	
-				.main-event__title
-					background-image: linear-gradient(to right, #2b7fc5 0%, #2b74be 100%)
+			.event
+				position: absolute
+				top: 220px
+				right: 0
+				width: 300px
+				.round
+					float: right
+					margin-left: 10px
+				.event__text
+					overflow: hidden
+				.event__line
+					position: absolute
+					top: -105px
+					right: 37px
+					height: 105px
+					width: 2px
+					background: #cdd5e0  				 	
 		&:nth-child(4)
 			.main-event	
 				.main-event__title
-					background-image: linear-gradient(to right, #2c6db9 0%, #2c60b1 100%)
+					background-image: linear-gradient(to right, #2b7fc5 0%, #2b74be 100%)
+			.event
+				position: absolute
+				top: -165px
+				left: -30px
+				width: 380px
+				&.event_bot
+					top: -67px
+				.round
+					float: left
+					margin-right: 20px
+				.event__text
+					overflow: hidden
 		&:nth-child(5)
-			.main-event	
-				.main-event__title
-					background-image: linear-gradient(to right, #2c5aad 0%, #2d4ea5 100%)
+			.event
+				position: absolute
+				top: 220px
+				left: -77px
+				width: 360px
+				+clr
+				.round
+					float: left
+					margin-right: 10px
+				.event__text
+					overflow: hidden
+				.event__line
+					position: absolute
+					top: -105px
+					left: 37px
+					height: 105px
+					width: 2px
+					background: #cdd5e0 					
 		&:nth-child(6)
 			.main-event	
 				.main-event__title
+					background-image: linear-gradient(to right, #2c6db9 0%, #2c60b1 100%)
+		&:nth-child(7)
+			.main-event	
+				.main-event__title
+					background-image: linear-gradient(to right, #2c5aad 0%, #2d4ea5 100%)
+			.event
+				position: absolute
+				top: -120px
+				left: 0
+				width: 250px 
+				.round
+					float: left
+					margin-right: 10px
+				.event__text
+					overflow: hidden
+				.event__line
+					position: absolute
+					top: 75px
+					left: 38px
+					width: 2px
+					height: 40px 
+					background: #cdd5e0	
+		&:nth-child(8)
+			.main-event	
+				.main-event__title
 					background-image: linear-gradient(to right, #2d47a1 0%, #2e3b99 100%)
+// m-quote
+.m-quote
+	position: relative
+	padding: 70px 0 120px 
+	background: url(../img/quote-bg.jpg)
+	+cover
+	.m-quote__in
+		+clr
+	.m-quote__img
+		position: relative
+		width: 300px
+		height: 300px
+		float: left
+		border-radius: 50%
+		overflow: hidden
+		margin-right: 35px
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			display: block
+			height: 100%
+	.m-quote__content
+		overflow: hidden
+		color: #fff 
+	.m-quote__title
+		margin-bottom: 40px 
+		+opensans-sb
+		font-size: 22px
+		text-transform: uppercase
+	.m-quote__text
+		margin-bottom: 15px	 			 
+		font-size: 30px
+		text-shadow: -1.4px 1.4px 2px rgba(0, 0, 0, 0.35)
+	.m-quote__author
+		+opensans-l
+		font-size: 19px
+		strong
+			+opensans-sb
+
+// m-parthners
+.m-parthners
+	padding: 25px 0 80px 
+	.m-parthners__wrap
+		+clr
+		padding-top: 40px
+	.m-parthners__col
+		float: left
+		width: 50%
+		padding: 0 50px 50px 100px
+		border-left: 2px solid #e9e9e9
+		&:first-child
+			border-left: none
+			padding: 0 100px 50px 50px
+	.m-parthners__title
+		height: 100px
+		text-align: center
+		+opensans-eb
+		text-transform: uppercase
+		color: #0187e0
+		+vertical
+		.m-parthners__title-in
+			display: inline-block
+			vertical-align: middle
+			span, img
+				display: inline-block
+				vertical-align: middle
+				text-align: left
+			span
+				margin-left: 10px
+				font-size: 15px	
+.slider
+	.slider__item
+		a
+			display: block
+			height: 150px
+			+vertical
+			img
+				display: inline-block
+				vertical-align: middle
+
+// footer
+.footer
+	position: relative
+	padding: 25px 0
+	min-height: 250px 
+	background: url(../img/footer-bg.jpg)
+	+cover
+	.footer__in
+		font-size: 0
+	.footer__logo
+		display: inline-block
+		vertical-align: middle
+		margin-right: 50px
+	.footer__menu
+		display: inline-block
+		vertical-align: middle
+		margin-right: 30px 
+	.footer__link
+		display: inline-block
+		margin-left: 35px 
+		a
+			font-size: 16px
+			color: #fff
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+		&:first-child
+			margin-left: 0
+	.footer__socials
+		display: inline-block
+		vertical-align: middle
+		span
+			display: inline-block
+			vertical-align: middle
+			margin-right: 30px
+			font-size: 16px
+			color: #fff 
+		ul
+			display: inline-block
+			vertical-align: middle
+			li
+				display: inline-block
+				vertical-align: middle
+				a
+					display: block
+					width: 60px
+					height: 54px
+					line-height: 54px
+					text-align: center
+					margin-left: 5px
+					background: rgba(#fff, 0.2)
+					i
+						vertical-align: middle
+						color: #fff
+						&.icon-tw
+							font-size: 24px
+						&.icon-fb
+							font-size: 36px
+						&.icon-play
+							font-size: 26px
+						&.icon-in
+							font-size: 26px
+	.footer__copyrights
+		display: inline-block
+		vertical-align: middle
+		padding-left: 13px
+		font-size: 16px
+		color: #fff 						  		 	 
+			  	
+			
+
+
+
+
+
+
+
+
 
 
 

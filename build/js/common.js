@@ -34,7 +34,12 @@ $(document).ready(function() {
 		autoplay: true,
 		arrows: false,
 		fade: true,
-		adaptiveHeight: true
+		dots: true
+	});
+
+	$('.js-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1
 	});
 
 });

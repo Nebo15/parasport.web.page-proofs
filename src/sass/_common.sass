@@ -50,6 +50,8 @@ body
 	max-width: 1200px
 	padding: 0 10px
 	margin: 0 auto
+.clr
+	+clr	
 	
 .cookies
 	position: relative
@@ -105,12 +107,15 @@ body
 	+vertical
 	&.round_gold
 		background: $gold 
-	i
+	i, span
 		display: inline-block
 		vertical-align: middle
 		&.icon-medal
 			font-size: 38px
 			color: #464646
+		&.icon-human
+			font-size: 42px
+			color: #4b4b4b  	
 .btn
 	padding: 24px
 	border-radius: 4px

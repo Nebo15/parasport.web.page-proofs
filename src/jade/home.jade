@@ -134,17 +134,17 @@ block content
 	// carousel
 	.carousel.js-carousel
 		.carousel__item
-			img(src="img/carousel1.jpg", alt="")
+			img(src="http://lorempixel.com/1685/579/transport", alt="")
 		.carousel__item
-			img(src="img/carousel2.jpg", alt="")
+			img(src="http://lorempixel.com/1685/579/sports", alt="")
 		.carousel__item
-			img(src="img/carousel3.jpg", alt="")		
+			img(src="http://lorempixel.com/1685/579/nature", alt="")
 		.carousel__item
-			img(src="img/carousel4.jpg", alt="")
+			img(src="http://lorempixel.com/1685/579/technics", alt="")
 		.carousel__item
-			img(src="img/carousel5.jpg", alt="")
+			img(src="http://lorempixel.com/1685/579/sports", alt="")
 		.carousel__item
-			img(src="img/carousel6.jpg", alt="")			
+			img(src="http://lorempixel.com/1685/579/people", alt="")			
 	// m-news
 	.m-news
 		.center
@@ -249,7 +249,8 @@ block content
 	// events
 	.events
 		.events__in
-			.title key events
+			.center
+				.title key events
 			.chronology
 				.chronology__year
 					.chronology__nav
@@ -259,7 +260,12 @@ block content
 								span Parasport founded
 							.main-event__year 1996
 						.event
-
+							.event__line
+							.round
+								i.icon-human
+							.event__text		
+								p <strong>Oleg Boyko</strong>
+								p <strong>establishes Parasport</strong>	
 				.chronology__year
 					.chronology__nav
 					.chronology__content
@@ -268,6 +274,19 @@ block content
 								span Turin Paralympic Games
 							.main-event__year 2006
 						.event
+							.event__line
+							.round 
+								span 2006
+							.event__text
+								p PARASPORT granted financial aid for Russian Paralympic Team’s participation in Turin Paralympics
+				.chronology__year
+					.chronology__nav
+					.chronology__content
+						.event
+							.event__line
+							.round
+								span 2009
+							.event__text In 2009 PARASPORT participates in financing, training and preparation activities of the Paralympic Team for the X Winter Paralympics 2010 in Vancouver, Canada.		
 				.chronology__year
 					.chronology__nav
 					.chronology__content
@@ -275,7 +294,24 @@ block content
 							.main-event__title
 								span Vancouver Winter Paralympics
 							.main-event__year 2010
-						.event				 
+						.event
+							.clr
+								.round
+									span 2010
+								.event__text We establish special grants for athletes - participants of the Vancouver Winter Paralympics of 2010.
+								.event__line
+							.clr
+								.round
+									img(src="img/hokkey.png", style="display: inline-block; vertical-align: middle;" alt="")
+								.event__text In 2010 the foundation sponsors the Russian Sledge Hockey Team				 
+				.chronology__year
+					.chronology__nav
+					.chronology__content
+						.event
+							.event__line
+							.round
+								span 2011
+							.event__text We provide financial assistance for  Paralympic Team in their training and preparation for London 2012 Paralympics Games
 				.chronology__year
 					.chronology__nav
 					.chronology__content
@@ -283,7 +319,6 @@ block content
 							.main-event__title
 								span London Paralympic Games
 							.main-event__year 2012
-						.event
 				.chronology__year
 					.chronology__nav
 					.chronology__content
@@ -292,6 +327,10 @@ block content
 								span Sochi Winter Paralympics
 							.main-event__year 2014
 						.event
+							.round
+								span 2014
+							.event__text Parasport makes large contribution to support paralympics in Sochi
+							.event__line
 				.chronology__year
 					.chronology__nav
 					.chronology__content
@@ -300,9 +339,92 @@ block content
 								span Rio Paralympic Games
 							.main-event__year 2016
 						.event
-
-
-
+	// m-quote
+	.m-quote
+		.center.m-quote__in
+			.m-quote__img
+				img(src="img/img2.jpg", alt="")
+			.m-quote__content
+				.m-quote__title Oleg boyko says:
+				.m-quote__text “The beauty of the Paralympic movement is that the experiences and achievements it provides, alongside its values, are often a route to success in life beyond sport. Furthering this message is one of Parasport’s core aims as an organisation.”
+				.m-quote__author <strong>Oleg Boyko</strong> - Founder of Parasport
+	// m-parthners
+	.m-parthners
+		.center
+			.title Our PARTNERS and supporters
+			.m-parthners__wrap
+				.m-parthners__col
+					.m-parthners__title
+						.m-parthners__title-in
+							span partners
+					.slider.js-slider
+						.slider__item
+							a(href="#")
+								img(src="img/sponsor1.jpg", alt="")
+						.slider__item
+							a(href="#")
+								img(src="img/sponsor2.jpg", alt="")
+						.slider__item
+							a(href="#")
+								img(src="img/sponsor3.jpg", alt="")
+						.slider__item
+							a(href="#")
+								img(src="img/sponsor1.jpg", alt="")
+						.slider__item
+							a(href="#")
+								img(src="img/sponsor2.jpg", alt="")
+				.m-parthners__col				 		
+					.m-parthners__title
+						.m-parthners__title-in
+							img(src="img/crowd.png", alt="")
+							span Russian paralympic team<br>participating in:
+					.slider.js-slider
+						.slider__item
+							a(href="#")
+								img(src="img/event1.jpg", alt="")
+						.slider__item
+							a(href="#")
+								img(src="img/event2.jpg", alt="")
+						.slider__item
+							a(href="#")
+								img(src="img/event3.jpg", alt="")
+						.slider__item
+							a(href="#")
+								img(src="img/event1.jpg", alt="")
+						.slider__item
+							a(href="#")
+								img(src="img/event2.jpg", alt="")
+	// footer
+	footer.footer
+		.center.footer__in
+			.footer__logo
+				a(href="index.html")
+					img(src="img/logo-white.svg", width="94", alt="")
+			.footer__menu
+				.footer__link
+					a(href="#") Cookies Policy
+				.footer__link
+					a(href="#") Terms & Conditions
+				.footer__link
+					a(href="#") Sitemap
+				.footer__link
+					a(href="#") Contact us			
+			.footer__socials
+				span Follow us:
+				ul
+					li
+						a(href="#")
+							i.icon-tw
+					li
+						a(href="#")
+							i.icon-fb
+					li
+						a(href="#")
+							i.icon-play
+					li
+						a(href="#")
+							i.icon-in				
+			.footer__copyrights © Copyright 2015
 
 
 
