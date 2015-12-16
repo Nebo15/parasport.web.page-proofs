@@ -325,7 +325,17 @@
 			+gradient
 			span
 				color: #fff
-				+opensans-eb 	  
+				+opensans-eb
+	&.tabs_light
+		.tabs__link
+			background: #fff
+			&:hover
+				background: $green
+			&:focus, &.active
+				+gradient
+				span
+					color: #fff
+					+opensans-eb			 	  
 .item-wrap
 	+clr
 	margin-left: -3px
@@ -740,12 +750,57 @@
 		padding-left: 13px
 		font-size: 16px
 		color: #fff 						  		 	 
-			  	
+.m-gallery
+	padding: 35px 0 65px
+	background: #e6edf6 
+	.title
+		margin-bottom: 40px 			  	
 			
+// inner page layuot
+.container
+	position: relative
+	padding-top: 145px
+	background: url(../img/topper-bg.jpg) no-repeat 
+	background-size: 100% auto
+	.main
+		+clr
+		max-width: 1200px
+		margin: 0 auto 
+		background: #fff
+	.content
+		overflow: hidden
+		padding-left: 20px	 
+	.sidebar
+		float: right
+		width: 286px
+		padding: 0 20px  
 
-
-
-
+.breadcrumbs
+	clear: both
+	padding: 7px 20px
+	ul
+		font-size: 0
+		li
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			margin-left: 8px
+			&:before
+				content: "\EA02"
+				margin-right: 8px 
+				@extend %icon
+				font-size: 10px
+			&:first-child
+				margin-left: 0
+				&:before
+					display: none	
+			a
+				font-size: 14px
+				+opensans-sb
+				color: #646464
+				text-decoration: none
+				&:hover
+					text-decoration: underline 	 
 
 
 
