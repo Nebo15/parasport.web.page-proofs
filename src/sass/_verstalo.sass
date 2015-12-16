@@ -1,0 +1,69 @@
+// verstalo styles
+
+.gallery
+	position: relative
+	overflow: auto
+	&__list
+		white-space: nowrap
+		font-size: 0
+	&__col
+		display: inline-block
+		padding: 4px 2px 0
+		vertical-align: top
+		&:nth-child(2n+1)
+			margin-top: 90px
+		&:nth-child(4n+1)
+			margin-top: 150px
+	&__item
+		display: block
+		position: relative
+		width: 387px
+		height: 340px
+		margin-bottom: 4px
+	&__pic
+		display: block
+		max-width: 100%
+		border-radius: 4px
+	&__full
+		position: absolute
+		top: 0
+		right: 0
+		width: 40px
+		height: 40px
+		border-radius: 0 4px 0 0
+		background: #2E4F82 
+		+vertical
+		color: #fff 
+		.icon
+			font-size: 22px 
+			vertical-align: middle
+	&__play
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 110px
+		height: 110px
+		margin: -55px 0 0 -55px
+		padding-left: 10px
+		border-radius: 50%
+		background: rgba(#000,.6)
+		+vertical
+		color: #fff 
+		.icon
+			font-size: 50px
+			vertical-align: middle
+	&__plus
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(#fff,.6)
+		border-radius: 4px
+		opacity: 0
+		transition: opacity .2s 
+		+vertical
+		color: #fff 
+		.icon
+			font-size: 70px
+			vertical-align: middle
