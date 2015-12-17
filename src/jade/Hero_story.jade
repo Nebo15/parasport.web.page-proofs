@@ -1,0 +1,48 @@
+extends _layout
+
+block title
+	title Hero_story
+
+block content
+	include _header
+
+	// main
+	.container
+		.main
+			// breadcrumbs
+			nav.breadcrumbs
+				ul
+					li
+						a(href="home.html") Home
+					li
+						a(href="#") Our heroes
+
+			aside.sidebar
+				.widget.widget_grey
+					.widget__title Le Van Cong
+					p Born prematurely with legs that were too small. 
+					img(src="img/img1.png", alt="")
+					a(href="#").btn READ HIS STORY
+				.widget.widget_grey
+					.widget__title Le Van Cong
+					p Born prematurely with legs that were too small. 
+					img(src="img/img2.png", alt="")
+					a(href="#").btn READ HIS STORY
+				.widget.widget_grey
+					.widget__title Le Van Cong
+					p Born prematurely with legs that were too small. 
+					img(src="img/img3.png", alt="")
+					a(href="#").btn READ HIS STORY	
+			.content
+				
+	include _footer		
+
+
+
+
+
+
+
+
+
+
