@@ -79,6 +79,20 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-tw:before { content: ""; }
 
+.icon-close-thin:before { content: ""; }
+
+.icon-comments:before { content: ""; }
+
+.icon-fit:before { content: ""; }
+
+.icon-heart-plus:before { content: ""; }
+
+.icon-moneykeeper:before { content: ""; }
+
+.icon-people:before { content: ""; }
+
+.icon-plus-thin:before { content: ""; }
+
 .slick-slider { position: relative; display: block; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
