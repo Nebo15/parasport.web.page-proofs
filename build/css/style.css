@@ -71,6 +71,10 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-human6:before { content: ""; }
 
+.icon-phone:before { content: ""; }
+
+.icon-email:before { content: ""; }
+
 .slick-slider { position: relative; display: block; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
@@ -424,6 +428,23 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .asia-pasific .asia-pasific__logo { position: absolute; left: -2px; top: 0; width: 82px; height: 82px; -webkit-border-radius: 50%; border-radius: 50%; background: #fff; -webkit-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5); box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5); }
 .asia-pasific .asia-pasific__logo img { display: block; width: 100%; }
 .asia-pasific p { margin-bottom: 0; color: #fff; font-family: "OpenSans-ExtraBold"; font-weight: normal; font-style: normal; text-transform: uppercase; }
+
+.error { position: relative; padding: 35px 0 70px; text-align: center; }
+.error .error__title { margin-bottom: 45px; }
+.error .error__title .h1 { margin-bottom: 0; }
+.error .error__title p { font-size: 18px; color: #464646; }
+.error .error__img { margin-bottom: 35px; }
+.error .error__bottom { font-family: "OpenSans-Light"; font-weight: normal; font-style: normal; font-size: 16px; color: #636466; text-align: center; }
+.error .error__bottom ul { display: inline-block; text-align: left; }
+.error .error__bottom ul > li { position: relative; margin-bottom: 10px; }
+.error .error__bottom ul > li:before { content: "·"; display: inline-block; margin-right: 5px; }
+.error .error__bottom ul > li a { color: #00a5dc; text-decoration: none; }
+.error .error__bottom ul > li a:hover { color: #3b7cc6; text-decoration: underline; }
+.error .error__bottom ul > li.contact-us p, .error .error__bottom ul > li.contact-us ul { display: inline-block; vertical-align: top; }
+.error .error__bottom ul > li.contact-us p { margin-right: 10px; }
+.error .error__bottom ul > li.contact-us ul li:before { content: ""; }
+.error .error__bottom ul > li.contact-us ul li a { position: relative; display: inline-block; padding-left: 30px; }
+.error .error__bottom ul > li.contact-us ul li a i { position: absolute; top: 2px; left: 0; }
 
 .gallery { position: relative; overflow: auto; }
 .gallery__head { background-size: cover; background-position: 50% 50%; }
