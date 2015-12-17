@@ -4,63 +4,7 @@ block title
 	title Executive_Board
 
 block content
-	// header
-	.header
-		.header__in
-			.logo
-				a(href="index.html")
-					img(src="img/logo.svg", width="212", alt="")
-			.header__content			
-				nav.nav
-					ul.menu
-						li.menu__link
-							a(href="#").menu__about ABOUT US
-							.dropdown
-								ul
-									li
-										a(href="#") Who we are
-									li
-										a(href="#") Our mission
-									li
-										a(href="#") Impact we have made
-									li
-										a(href="#") Executive board			
-						li.menu__link
-							a(href="#").menu__programs programmes
-							.dropdown
-								ul
-									li
-										a(href="#") Paralympic sponsorship
-									li
-										a(href="#") Paralympic movement
-									li
-										a(href="#") Training
-									li
-										a(href="#") Helpful links and resources	
-						li.menu__link
-							a(href="#").menu__heroes our heroes			
-						li.menu__link
-							a(href="#").menu__partners partners
-						li.menu__link
-							a(href="#").menu__media media & events
-							.dropdown
-								ul
-									li
-										a(href="#") News
-									li
-										a(href="#") We are in the news
-									li
-										a(href="#") Gallery
-									li
-										a(href="#") Events
-				a(href="#").support-link support us
-				ul.lang
-					li.lang__item
-						button(type="button").lang__btn.active
-							img(src="img/unionjack.png", alt="")
-					li.lang__item
-						button(type="button").lang__btn
-							img(src="img/Flag_of_Russia.png", alt="")			
+	include _header
 
 	// main
 	.container
@@ -183,37 +127,7 @@ block content
 									li Chairman & First Vice President of the Executive
 									li Committee of the Russian Paralympic Committee
 									li Honored Сoach of Russia, D.Sc. in Economics, Professor					
-	// footer
-	footer.footer
-		.center.footer__in
-			.footer__logo
-				a(href="index.html")
-					img(src="img/logo-white.svg", width="94", alt="")
-			.footer__menu
-				.footer__link
-					a(href="#") Cookies Policy
-				.footer__link
-					a(href="#") Terms & Conditions
-				.footer__link
-					a(href="#") Sitemap
-				.footer__link
-					a(href="#") Contact us			
-			.footer__socials
-				span Follow us:
-				ul
-					li
-						a(href="#")
-							i.icon-tw
-					li
-						a(href="#")
-							i.icon-fb
-					li
-						a(href="#")
-							i.icon-play
-					li
-						a(href="#")
-							i.icon-in				
-			.footer__copyrights © Copyright 2015		
+	include _footer		
 
 
 
