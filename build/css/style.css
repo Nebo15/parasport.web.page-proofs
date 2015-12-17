@@ -179,6 +179,11 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 
 .title { font-size: 22px; color: #929292; text-transform: uppercase; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; }
 
+.quote { padding-top: 15px; max-width: 500px; border-top: 2px solid #f67f41; }
+.quote quote { position: relative; display: block; padding-top: 30px; font-size: 25px; color: #6c6c6c; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; margin-bottom: 30px; }
+.quote quote:before { content: "“"; position: absolute; top: -20px; left: 0; font: 100px "Times New Roman", serif; color: #6c6c6c; }
+.quote quote:after { content: "”"; display: inline-block; font-family: "Times New Roman", serif; }
+
 .header { position: relative; padding: 0 10px; border-bottom: 4px solid #eaeaea; }
 .header .header__in { position: relative; max-width: 1400px; *zoom: 1; margin: 0 auto; padding-left: 220px; height: 95px; background: #fff; }
 .header .header__in:after { content: " "; display: table; clear: both; }
@@ -406,10 +411,6 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .breadcrumbs ul li a:hover { text-decoration: underline; }
 
 .board { color: #464646; }
-.board .board__topper { *zoom: 1; margin-bottom: 60px; }
-.board .board__topper:after { content: " "; display: table; clear: both; }
-.board .board__topper .board__topper-share { float: right; width: 76px; padding-top: 13px; }
-.board .board__topper .board__topper-in { overflow: hidden; font-size: 17px; }
 .board .board__list { font-size: 0; }
 .board .board__item { display: inline-block; vertical-align: top; margin-bottom: 30px; width: 50%; padding-right: 1%; *zoom: 1; }
 .board .board__item:after { content: " "; display: table; clear: both; }
@@ -418,6 +419,12 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .board .board__right ul li { position: relative; margin-bottom: 5px; }
 .board .board__right ul li:before { content: "·"; display: inline-block; margin-right: 5px; font-family: "OpenSans-ExtraBold"; font-weight: normal; font-style: normal; font-size: 16px; }
 .board .board__title { margin-bottom: 5px; font-size: 17px; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; text-transform: uppercase; }
+
+.topper { *zoom: 1; }
+.topper:after { content: " "; display: table; clear: both; }
+.topper .topper__share { float: right; width: 76px; padding-top: 13px; }
+.topper .topper__in { overflow: hidden; font-size: 17px; }
+.topper .topper__in p { margin-bottom: 60px; }
 
 .widget { position: relative; padding: 20px; margin-bottom: 10px; border-top: 1px solid #efeeee; text-align: center; }
 .widget p { font-size: 14px; color: #787878; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; margin-bottom: 20px; }
@@ -449,6 +456,23 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .error .error__bottom ul > li.contact-us ul li:before { content: ""; }
 .error .error__bottom ul > li.contact-us ul li a { position: relative; display: inline-block; padding-left: 30px; }
 .error .error__bottom ul > li.contact-us ul li a i { position: absolute; top: 2px; left: 0; }
+
+.hero .hero__info { *zoom: 1; margin-bottom: 30px; }
+.hero .hero__info:after { content: " "; display: table; clear: both; }
+.hero .hero__img { width: 45%; float: left; margin-right: 15px; }
+.hero .hero__img img { display: block; width: 100%; }
+.hero .hero__about { overflow: hidden; }
+.hero .hero__about table tr td { color: #464646; font-size: 16px; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; line-height: 1.6; color: #787878; }
+.hero .hero__about table tr td:first-child { text-transform: uppercase; color: #464646; }
+.hero .hero__about table tr td:first-child p { margin-bottom: 10px; }
+.hero .hero__medals { font-size: 0; }
+.hero .hero__content { font-size: 17px; color: #464646; line-height: 1.6; }
+.hero .hero__content ul { margin-bottom: 60px; }
+.hero .hero__content ul li { position: relative; margin-bottom: 20px; }
+.hero .hero__content ul li:before { content: "·"; display: inline-block; margin-right: 5px; }
+
+.medal { float: left; display: inline-block; vertical-align: top; width: 50%; margin-bottom: 30px; font-size: 17px; }
+.medal .round { float: left; margin-right: 20px; }
 
 .gallery { position: relative; overflow: auto; }
 .gallery__head { background-size: cover; background-position: 50% 50%; }

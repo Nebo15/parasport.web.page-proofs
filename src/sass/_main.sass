@@ -806,16 +806,6 @@
 // board
 .board
 	color: $darkgrey 
-	.board__topper
-		+clr
-		margin-bottom: 60px
-		.board__topper-share
-			float: right
-			width: 76px
-			padding-top: 13px
-		.board__topper-in
-			overflow: hidden
-			font-size: 17px
 	.board__list
 		font-size: 0
 	.board__item
@@ -847,6 +837,17 @@
 		font-size: 17px
 		+opensans-sb
 		text-transform: uppercase
+.topper
+	+clr
+	.topper__share
+		float: right
+		width: 76px
+		padding-top: 13px
+	.topper__in
+		overflow: hidden
+		font-size: 17px
+		p
+			margin-bottom: 60px
 
 // widgets
 .widget
@@ -961,8 +962,59 @@
 									top: 2px
 									left: 0	
 								 		 
-
-
+// hero
+.hero
+	.hero__info
+		+clr
+		margin-bottom: 30px
+	.hero__img
+		width: 45%
+		float: left
+		margin-right: 15px
+		img
+			display: block
+			width: 100% 
+	.hero__about
+		overflow: hidden
+		table
+			tr
+				td
+					color: #464646
+					font-size: 16px
+					+opensans-sb
+					line-height: 1.6
+					color: #787878 
+					&:first-child	
+						text-transform: uppercase
+						color: #464646 
+						p
+							margin-bottom: 10px
+	.hero__medals
+		font-size: 0
+	.hero__content
+		font-size: 17px
+		color: #464646
+		line-height: 1.6
+		ul
+			margin-bottom: 60px
+			li
+				position: relative
+				margin-bottom: 20px
+				&:before
+					content: "·"
+					display: inline-block
+					margin-right: 5px	
+.medal
+	float: left
+	display: inline-block
+	vertical-align: top
+	width: 50%
+	margin-bottom: 30px
+	font-size: 17px
+	.round
+		float: left
+		margin-right: 20px 								 
+						 
 
 
 
