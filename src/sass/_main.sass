@@ -907,7 +907,60 @@
 		+opensans-eb
 		text-transform: uppercase  
 	
-
+// error
+.error
+	position: relative
+	padding: 35px 0 70px 
+	text-align: center
+	.error__title
+		margin-bottom: 45px
+		.h1
+			margin-bottom: 0
+		p
+			font-size: 18px
+			color: #464646
+	.error__img
+		margin-bottom: 35px
+	.error__bottom
+		+opensans-l
+		font-size: 16px
+		color: #636466
+		text-align: center
+		ul
+			display: inline-block
+			text-align: left
+			& > li
+				position: relative
+				margin-bottom: 10px
+				&:before
+					content: "·"
+					display: inline-block
+					margin-right: 5px
+				a
+					color: #00a5dc
+					text-decoration: none
+					&:hover
+						color: #3b7cc6
+						text-decoration: underline	
+				&.contact-us
+					p, ul
+						display: inline-block
+						vertical-align: top
+					p
+						margin-right: 10px
+					ul	
+						li
+							&:before
+								content: ""
+							a
+								position: relative
+								display: inline-block
+								padding-left: 30px
+								i
+									position: absolute
+									top: 2px
+									left: 0	
+								 		 
 
 
 
