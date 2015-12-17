@@ -179,7 +179,63 @@
 			font-size: 20px 
 			vertical-align: middle
 
+.sitemap
+	&__list
+		font-size: 0
+	&__item
+		display: inline-block
+		width: 33.33%
+		margin-bottom: 50px
+		padding-right: 5.33%
+		vertical-align: top
+	&__title
+		padding: 0 25px 20px
+		font-size: 26px
+	&__link
+		display: block
+		padding: 12px 25px
+		border-bottom: 1px solid #e3e3e3
+		color: #787878
+		text-decoration: none
+		+clr
+		&:first-child
+			border-top: 1px solid #e3e3e3
+		&-arrow
+			float: left
+			margin: 5px 15px 0 0
+			font-size: 0
+			.icon
+				font-size: 9px
+		&-title
+			display: table
+			+opensans-sb
+			font-size: 17px 
 
+.links
+	&__item
+		display: block
+		margin-bottom: 15px
+		border: 2px solid #e3e3e3
+		border-radius: 24px
+		color: #787878
+		text-decoration: none
+		+clr
+		&-arrow
+			float: right
+			width: 60px
+			height: 44px
+			+vertical
+			.icon
+				vertical-align: middle
+			.icon-arrow-link
+				font-size: 9px
+			.icon-arrow-download
+				font-size: 20px
+		&-title
+			display: table
+			padding: 13px 22px
+			+opensans-sb
+			font-size: 14px
 
 
 

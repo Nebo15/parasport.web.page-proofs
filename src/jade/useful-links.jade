@@ -1,0 +1,193 @@
+extends _layout
+
+block title
+	title useful links
+
+block content
+	// header
+	.header
+		.header__in
+			.logo
+				a(href="index.html")
+					img(src="img/logo.svg", width="212", alt="")
+			.header__content			
+				nav.nav
+					ul.menu
+						li.menu__link
+							a(href="#").menu__about ABOUT US
+							.dropdown
+								ul
+									li
+										a(href="#") Who we are
+									li
+										a(href="#") Our mission
+									li
+										a(href="#") Impact we have made
+									li
+										a(href="#") Executive board			
+						li.menu__link
+							a(href="#").menu__programs programmes
+							.dropdown
+								ul
+									li
+										a(href="#") Paralympic sponsorship
+									li
+										a(href="#") Paralympic movement
+									li
+										a(href="#") Training
+									li
+										a(href="#") Helpful links and resources	
+						li.menu__link
+							a(href="#").menu__heroes our heroes			
+						li.menu__link
+							a(href="#").menu__partners partners
+						li.menu__link
+							a(href="#").menu__media media & events
+							.dropdown
+								ul
+									li
+										a(href="#") News
+									li
+										a(href="#") We are in the news
+									li
+										a(href="#") Gallery
+									li
+										a(href="#") Events
+				a(href="#").support-link support us
+				ul.lang
+					li.lang__item
+						button(type="button").lang__btn.active
+							img(src="img/unionjack.png", alt="")
+					li.lang__item
+						button(type="button").lang__btn
+							img(src="img/Flag_of_Russia.png", alt="")			
+
+	// main
+	.container
+		.main
+			// breadcrumbs
+			nav.breadcrumbs
+				ul
+					li
+						a(href="home.html") Home
+					li
+						a(href="#") About us
+					li
+						a(href="#") Executive Board
+			//- aside
+			aside.sidebar
+				.widget
+					.widget__title SUPPORT US
+					p Only with your support and Parasport we can be proud of our Olympians
+					img(src="img/ambrella.png", alt="")
+					button.btn support us
+				.widget.widget_grey.brochure
+					.widget__title DOWNLOAD OUR LATEST BROCHURE
+					img(src="img/brochure.png", alt="")
+					button.btn DOWNLOAD
+				.widget.widget_grey
+					a(href="#").asia-pasific
+						.asia-pasific__logo
+							img(src="img/logo.svg", width="82", alt="")
+						p PARASPORT
+						p ASIA
+						p PACIFIC
+			//- conten
+			.content
+				//- links
+				.links
+					.links__wrap
+						h1.links__h1.h1 Helpful links
+						.links__list
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title International Paralympic Committee
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title IParalympic Games Beijing 2008
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title Paralympic Games Vancouver 2010
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title Paralympic Games for London 2012
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title Cerebral Palsy International Sport and Recreation Association
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title IBSA: International Blind Sports Association
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title -FID INAS: International Sports Federation for Persons with Intellectual Disability
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title IWASF: International Wheelchair and Amputee Sports Federation
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-link
+								.links__item-title Disabled Peoples' International
+					.links__wrap
+						h1.links__h1.h1 Resources
+						.links__list
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-download
+								.links__item-title International Paralympic Committee Brochure (PDF 1.3 MB)
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-download
+								.links__item-title Disabled Poeples’ application (PDF 1.5 MB)
+							a.links__item(href="#")
+								.links__item-arrow
+									i.icon.icon-arrow-download
+								.links__item-title Paralympic Games London 2012 (PDF 1.2 MB)
+	// footer
+	footer.footer
+		.center.footer__in
+			.footer__logo
+				a(href="index.html")
+					img(src="img/logo-white.svg", width="94", alt="")
+			.footer__menu
+				.footer__link
+					a(href="#") Cookies Policy
+				.footer__link
+					a(href="#") Terms & Conditions
+				.footer__link
+					a(href="#") Sitemap
+				.footer__link
+					a(href="#") Contact us			
+			.footer__socials
+				span Follow us:
+				ul
+					li
+						a(href="#")
+							i.icon-tw
+					li
+						a(href="#")
+							i.icon-fb
+					li
+						a(href="#")
+							i.icon-play
+					li
+						a(href="#")
+							i.icon-in				
+			.footer__copyrights © Copyright 2015		
+
+
+
+
+
+
+
+
+
+
