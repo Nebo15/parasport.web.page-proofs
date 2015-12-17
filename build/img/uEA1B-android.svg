@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="241px" height="351px" viewBox="0 0 241 351" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>android</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="android" sketch:type="MSLayerGroup" fill="#FFFFFF">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="41.9" y="10.5" width="10.5" height="10.4"></rect>
+            <path d="M31.5,132 L31.5,269.6 L42.7,269.6 L42.7,280.1 L53,280.1 L53,290.5 L83.4,290.5 L83.4,350.1 L104.1,350.1 L104.1,290.5 L138.2,290.5 L138.2,350.1 L159,350.1 L159,290.5 L188.5,290.5 L188.5,280.1 L199,280.1 L199,269.6 L209.6,269.6 L209.6,132 L31.5,132 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M199,53.2 L188.7,53.2 L188.7,63.6 L178.3,63.6 L178.3,73.1 L167.3,73.1 L167.3,63.2 L156.5,63.2 L156.5,52.6 L167.3,52.6 L167.3,42.1 L178.1,42.1 L178.1,53.2 L188.7,53.2 L188.7,21.1 L199,21.1 L199,10.5 L188.7,10.5 L188.7,20.9 L178.1,20.9 L178.1,31.6 L167.3,31.6 L167.3,21.1 L73.8,21.1 L73.8,31.6 L63,31.6 L63,20.9 L52.4,20.9 L52.4,52.6 L63,52.6 L63,42.1 L73.8,42.1 L73.8,52.6 L84.6,52.6 L84.6,63.2 L73.8,63.2 L73.8,73.1 L63,73.1 L63,63.7 L52.4,63.7 L52.4,52.7 L41.9,52.7 L41.9,63.7 L31.5,63.7 L31.5,73.1 L31.5,74.1 L31.5,113.8 L209.6,113.8 L209.6,73.1 L209.6,63.6 L199,63.6 L199,53.2 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="220.2" y="139.6" width="20.7" height="94.2"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="139.6" width="20.7" height="94.2"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="199" y="0" width="10.4" height="10.5"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="31.5" y="0" width="10.4" height="10.5"></rect>
+        </g>
+    </g>
+</svg>
