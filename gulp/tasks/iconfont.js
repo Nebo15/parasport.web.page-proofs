@@ -7,6 +7,7 @@ var browserSync = require('browser-sync');
 reload = browserSync.reload;
 
 var fontname = 'svgfont';
+var runTimestamp = Math.round(Date.now()/1000);
 gulp.task('font', function(){
   return gulp.src(config.src.img+'svg/*.svg')
     // .pipe(svgmin())
@@ -17,7 +18,8 @@ gulp.task('font', function(){
       normalize: true,
       fontHeight: 1001,
       fontStyle: 'normal',
-      fontWeight: 'normal'
+      fontWeight: 'normal',
+      timestamp: runTimestamp
     }))
     .on('glyphs', function(glyphs, options) {
         console.log(glyphs);
