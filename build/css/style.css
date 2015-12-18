@@ -305,6 +305,8 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .tags ul li:first-child { margin-left: 0; }
 .tags ul li a { display: block; -webkit-border-radius: 8px; border-radius: 8px; background: #fff; padding: 5px 15px; font-size: 14px; color: #787878; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; text-decoration: none; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
 .tags ul li a:hover { background: #90cc00; color: #fff; }
+.tags.tags_gray ul li a { background: #ebebeb; }
+.tags.tags_gray ul li a.active { background: #cccbcb; }
 
 .date { font-size: 14px; color: #929292; }
 
