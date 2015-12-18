@@ -513,6 +513,20 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .article ul li:before { content: "·"; display: inline-block; margin-right: 5px; }
 .article .medal { font-size: 14px; }
 
+.article-nav { margin-top: -50px; margin-bottom: 2px; }
+.article-nav .article-nav__title { margin-bottom: 30px; font-size: 20px; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; color: #929292; text-align: center; text-transform: uppercase; }
+.article-nav .article-nav__links { *zoom: 1; }
+.article-nav .article-nav__links:after { content: " "; display: table; clear: both; }
+.article-nav .article-nav__prev, .article-nav .article-nav__next { float: left; width: 50%; background: #d6dfea; padding: 60px 0 80px; }
+.article-nav .artcile-nav__arrow, .article-nav .article-nav__block { display: inline-block; vertical-align: middle; }
+.article-nav .article-nav__block .item { background: #e6edf6; }
+.article-nav .artcile-nav__arrow i { font-size: 38px; color: #7e7f80; }
+.article-nav .article-nav__prev { border-right: 1px solid #fff; text-align: right; padding-right: 150px; }
+.article-nav .article-nav__prev .artcile-nav__arrow { margin-right: 150px; }
+.article-nav .article-nav__prev .article-nav__block { text-align: left; }
+.article-nav .article-nav__next { border-left: 1px solid #fff; padding-left: 150px; }
+.article-nav .article-nav__next .artcile-nav__arrow { margin-left: 150px; }
+
 .gallery { position: relative; overflow: auto; }
 .gallery__head { background-size: cover; background-position: 50% 50%; }
 .gallery__head-wrap { height: 330px; background: rgba(0, 0, 0, 0.5); text-align: center; font-size: 0; }

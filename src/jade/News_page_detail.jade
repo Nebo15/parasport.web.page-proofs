@@ -97,7 +97,7 @@ block content
 			.article-nav__title READ NEXT STORY:
 			.article-nav__links
 				.article-nav__prev
-					.artcile-nav__arrow
+					a(href="#").artcile-nav__arrow
 						i.icon-arr-left
 					.article-nav__block
 						.item
@@ -112,6 +112,8 @@ block content
 											a(href="#").tag 2015
 										li
 											a(href="#").tag Paralympic Team
+				.article-nav__next
+					.article-nav__block							
 						.item
 							.item__img
 								img(src="img/img1.jpg", alt="")
@@ -124,7 +126,9 @@ block content
 										li
 											a(href="#").tag 2015
 										li
-											a(href="#").tag Paralympic Team					
+											a(href="#").tag Paralympic Team
+					a(href="#").artcile-nav__arrow
+						i.icon-arr-right											
 	include _footer		
 
 
