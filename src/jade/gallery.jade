@@ -4,19 +4,74 @@ block title
 	title gallery
 
 block content
+	include _header
+
 	//- gallery
 	.gallery
 		.gallery__head(style="background-image: url(img/gallery-bg.jpg)")
 			.gallery__head-wrap
 				//- center
 				.gallery__head-title.center Gallery
-			.gallery__head-bc
+			.gallery__head-foot
 				//- center
-				.gallery__head-center.center Breadcrumbs
+				.gallery__head-center.center
+					//- breadcrumbs
+					nav.gallery__head-breadcrumbs.breadcrumbs
+						ul
+							li
+								a(href="home.html") Home
+							li
+								a(href="#") Media & Events
+							li
+								a(href="#") Gallery
+		//- tabs
+		.gallery__sort
+			.gallery__sort-center.center
+				a.gallery__sort-item.is-active(href="#")
+					.gallery__sort-title 2015
+				a.gallery__sort-item(href="#")
+					.gallery__sort-title 2014
+				a.gallery__sort-item(href="#")
+					.gallery__sort-title 2013
+				a.gallery__sort-item(href="#")
+					.gallery__sort-title 2012
+				a.gallery__sort-item(href="#")
+					.gallery__sort-title 2011
+				a.gallery__sort-item(href="#")
+					.gallery__sort-title 2010
+		.gallery__tags
+			//- center
+			.gallery__center.center
+				//- tags
+				.gallery__tags-wrap.tags.tags_gray
+					span Tags:
+					ul
+						li
+							a.tag.active(href="#") All
+						li
+							a.tag(href="#") Skiing
+						li
+							a.tag(href="#") Swimming
+						li
+							a.tag(href="#") Ceremony
+						li
+							a.tag(href="#") Skiing
+						li
+							a.tag(href="#") Swimming
+						li
+							a.tag(href="#") Ceremony
+						li
+							a.tag(href="#") Skiing
+						li
+							a.tag(href="#") Swimming
+						li
+							a.tag(href="#") Ceremony
 	//- center
 	.center
 		//- albums
 		.albums
+			//- title
+			.albums__head.title ALL ALBUMS
 			.albums__list
 				.albums__item
 					a.albums__link(href="#")
@@ -70,7 +125,13 @@ block content
 								.albums__meta-item 23 Sep 2015
 					button.albums__share
 						i.icon.icon-share
+			//- more-wrap
+			.more-wrap
+				button.more
+					span Load more
+					i.icon-load
 
+	include _footer
 
 
 
