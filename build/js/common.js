@@ -42,4 +42,9 @@ $(document).ready(function() {
 		slidesToScroll: 1
 	});
 
+	$('.js-events-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
 });

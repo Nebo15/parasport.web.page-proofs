@@ -312,14 +312,17 @@
 	.tabs__nav
 		display: inline-block
 		vertical-align: middle
+		font-size: 0
 		li
 			display: inline-block
 			vertical-align: middle
 			margin-left: 5px
+			margin-bottom: 5px
 	.tabs__link
 		display: block
 		height: 62px
-		width: 190px 
+		min-width: 190px 
+		padding: 0 10px 
 		border-radius: 4px
 		background: #ebebeb
 		transition: background 200ms
@@ -331,7 +334,16 @@
 			vertical-align: middle
 			font-size: 14px
 			color: #353535
+			text-transform: uppercase
 			+opensans-sb
+		i
+			display: inline-block
+			vertical-align: middle
+			margin-left: 20px
+			color: #fff
+			&.icon-close-thin
+				font-size: 20px
+				display: none 	
 		&:hover
 			background: $green
 		&:focus, &.active
@@ -339,6 +351,10 @@
 			span
 				color: #fff
 				+opensans-eb
+		&.active
+			i
+				&.icon-close-thin
+					display: inline-block		
 	&.tabs_light
 		.tabs__link
 			background: #fff
@@ -368,9 +384,9 @@
 		background: url(../img/placeholder.png) center no-repeat
 		img
 			display: block
-			width: 100%
-			height: auto
-			min-height: 100%
+			width: auto
+			min-width: 100%
+			height: 100%
 	.item__content
 		position: relative
 		height: 200px
@@ -386,6 +402,16 @@
 		bottom: 10px
 		left: 10px
 		right: 10px
+	&.item_large
+		width: 595px 
+		.item__img
+			height: 400px
+			width: 296px
+			float: left
+		.item__content
+			height: 400px
+			width: 299px 
+			float: left	 	
 .item-more
 	padding-top: 20px
 	text-align: center 		
@@ -793,7 +819,7 @@
 		overflow: hidden 
 	.sidebar
 		float: right
-		width: 286px
+		width: 266px
 		padding: 9px 0 0 20px 
 
 .breadcrumbs
@@ -859,6 +885,9 @@
 		text-transform: uppercase
 .topper
 	+clr
+	.topper__left
+		float: left
+		width: 290px 
 	.topper__share
 		float: right
 		width: 76px
@@ -868,6 +897,8 @@
 		font-size: 17px
 		p
 			margin-bottom: 60px
+	&.topper_wide
+		margin-bottom: 30px		
 
 // widgets
 .widget
@@ -1151,13 +1182,98 @@
 		.artcile-nav__arrow
 			margin-left: 150px
 
+// calendar
+.calendar
+	padding: 0 
+	.calendar__topper
+		position: relative
+		padding: 0 30px
+		height: 42px
+		background: #e9e9e9
+	.calendar__title
+		text-align: center
+		text-transform: uppercase
+		font-size: 12px
+		line-height: 42px 
+		color: #000 	
+	.calendar__prev
+		position: absolute
+		top: 50%
+		left: 8px
+		margin-top: -6px
+		background: none 
+		+arr(10, 12, #767676, l)  
+	.calendar__next
+		position: absolute
+		top: 50%
+		right: 8px
+		margin-top: -6px
+		background: none 
+		+arr(10, 12, #767676, r)
+	.calendar__week
+		padding: 10px 0
+		table
+			td
+				width: 35px
+				font-size: 14px
+				text-align: center
+				color: #444
+				text-transform: uppercase 
+	.calendar__days
+		table
+			border-collapse: collapse
+			td
+				vertical-align: middle
+				border: 1px solid #dfdfda
+				font-size: 13px
+				text-align: center
+				&:nth-child(6), &:nth-child(7)
+					a
+						background: #ebebeb 
+				a
+					display: block
+					width: 34px
+					height: 33px 			 	
+					line-height: 33px
+					color: #444
+					text-decoration: none
+					&.disabled
+						color: #bbb 
+					&.active
+						color: #fff
+						background: #4e4daa  	  
 
-
-
-
-
-
-
+.events-slider
+	.events-slider__item
+		font-size: 14px
+		color: #787878 
+	.events-slider__date
+		width: 180px
+		height: 180px
+		margin: 0 auto 10px
+		border-radius: 50%
+		background: url(../img/date-bg.png)
+		+cover
+		+vertical
+		.events-slider__date-in
+			display: inline-block
+			vertical-align: middle
+			p
+				margin-bottom: 0 
+				+opensans-sb
+				color: #fff
+				font-size: 16px
+				strong
+					font-size: 70px
+					line-height: 1
+	p
+		margin-bottom: 10px
+		text-align: left 				
+	.events-slider__title
+		text-align: left
+		+opensans-eb
+		font-size: 16px
+		color: #464646 			 
 
 
 
