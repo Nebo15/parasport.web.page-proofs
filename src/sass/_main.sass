@@ -1003,21 +1003,91 @@
 				&:before
 					content: "·"
 					display: inline-block
-					margin-right: 5px	
+					margin-right: 5px
+.medals
+	font-size: 0						
 .medal
-	float: left
 	display: inline-block
 	vertical-align: top
 	width: 50%
 	margin-bottom: 30px
+	padding-right: 3%
 	font-size: 17px
 	.round
 		float: left
 		margin-right: 20px 								 
-						 
-
-
-
+	.medal__left
+		width: 76px
+		float: left
+		margin-right: 20px
+		text-align: center
+		p
+			margin-bottom: 0
+			font-size: 14px
+			color: #6c6c6c
+			strong
+				+opensans-sb
+				font-size: 25px   					 
+// post
+.post
+	.post__details
+		font-size: 0
+		margin-bottom: 5px
+		li
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			margin-left: 10px
+			padding-left: 10px
+			font-size: 14px
+			color: #464646
+			a
+				color: #464646
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				bottom: 0
+				width: 1px
+				background: #cdcdcd
+			&:first-child
+				margin-left: 0
+				padding-left: 0
+				&:before
+					display: none	 
+	.post__img
+		background: #ebeaea
+		img
+			display: block
+			width: 100%
+		.tags
+			padding: 10px 15px 	
+.article
+	padding: 30px 0
+	font-size: 16px
+	color: #464646
+	line-height: 1.6
+	p
+		margin-bottom: 30px
+	strong
+		+opensans-sb
+	ul
+		+clr
+		margin-bottom: 30px
+		li
+			position: relative
+			float: left
+			width: 50%
+			&:before
+				content: "·"
+				display: inline-block
+				margin-right: 5px
+	.medal
+		font-size: 14px		 
 
 
 

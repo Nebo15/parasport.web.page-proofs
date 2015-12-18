@@ -150,7 +150,7 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .clr { *zoom: 1; }
 .clr:after { content: " "; display: table; clear: both; }
 
-.h1 { margin-bottom: 20px; color: #464646; font-size: 47px; font-family: "OpenSans"; font-weight: normal; font-style: normal; font-weight: normal; }
+.h1 { margin-bottom: 20px; color: #464646; font-size: 47px; font-family: "OpenSans"; font-weight: normal; font-style: normal; font-weight: normal; line-height: 1.2; }
 .h1 strong { font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; }
 
 .share { width: 76px; height: 76px; -webkit-border-radius: 50%; border-radius: 50%; background: #e7eaed; color: #464646; vertical-align: middle; text-align: center; -webkit-transition: color 200ms, background 200ms; transition: color 200ms, background 200ms; font-size: 14px; }
@@ -485,8 +485,33 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .hero .hero__content ul li { position: relative; margin-bottom: 20px; }
 .hero .hero__content ul li:before { content: "·"; display: inline-block; margin-right: 5px; }
 
-.medal { float: left; display: inline-block; vertical-align: top; width: 50%; margin-bottom: 30px; font-size: 17px; }
+.medals { font-size: 0; }
+
+.medal { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 30px; padding-right: 3%; font-size: 17px; }
 .medal .round { float: left; margin-right: 20px; }
+.medal .medal__left { width: 76px; float: left; margin-right: 20px; text-align: center; }
+.medal .medal__left p { margin-bottom: 0; font-size: 14px; color: #6c6c6c; }
+.medal .medal__left p strong { font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; font-size: 25px; }
+
+.post .post__details { font-size: 0; margin-bottom: 5px; }
+.post .post__details li { position: relative; display: inline-block; vertical-align: middle; margin-left: 10px; padding-left: 10px; font-size: 14px; color: #464646; }
+.post .post__details li a { color: #464646; text-decoration: none; }
+.post .post__details li a:hover { text-decoration: underline; }
+.post .post__details li:before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 1px; background: #cdcdcd; }
+.post .post__details li:first-child { margin-left: 0; padding-left: 0; }
+.post .post__details li:first-child:before { display: none; }
+.post .post__img { background: #ebeaea; }
+.post .post__img img { display: block; width: 100%; }
+.post .post__img .tags { padding: 10px 15px; }
+
+.article { padding: 30px 0; font-size: 16px; color: #464646; line-height: 1.6; }
+.article p { margin-bottom: 30px; }
+.article strong { font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; }
+.article ul { *zoom: 1; margin-bottom: 30px; }
+.article ul:after { content: " "; display: table; clear: both; }
+.article ul li { position: relative; float: left; width: 50%; }
+.article ul li:before { content: "·"; display: inline-block; margin-right: 5px; }
+.article .medal { font-size: 14px; }
 
 .gallery { position: relative; overflow: auto; }
 .gallery__head { background-size: cover; background-position: 50% 50%; }
