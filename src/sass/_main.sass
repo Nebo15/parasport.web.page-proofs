@@ -1122,6 +1122,13 @@
 	font-size: 16px
 	color: #464646
 	line-height: 1.6
+	hr
+		display: block
+		width: 80px
+		height: 2px
+		background: #f67f41
+		margin: 0 0 20px
+		border-color: #f67f41
 	p
 		margin-bottom: 30px
 	strong
@@ -1131,12 +1138,14 @@
 		margin-bottom: 30px
 		li
 			position: relative
-			float: left
-			width: 50%
 			&:before
 				content: "·"
 				display: inline-block
 				margin-right: 5px
+		&.narrow
+			li
+				float: left
+				width: 50%		
 	.medal
 		font-size: 14px		 
 
@@ -1287,6 +1296,44 @@
 		img
 			display: block
 			width: 100% 
+.partner__list
+	font-size: 0
+	margin-left: -20px
+	margin-bottom: 35px
+	.partner
+		margin-left: 20px 
+.partner
+	display: inline-block
+	vertical-align: top
+	margin-bottom: 20px
+	width: 300px
+	border: 2px solid #ebebeb
+	.partner__logo
+		height: 165px
+		+vertical
+		img
+			display: inline-block
+			vertical-align: middle
+			max-height: 100%
+	.partner__title
+		padding: 15px
+		min-height: 90px
+		background: #ebebeb
+		text-align: center
+		font-size: 17px
+		color: #464646 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

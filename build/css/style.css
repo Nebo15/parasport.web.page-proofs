@@ -529,12 +529,14 @@ body { min-width: 1440px; font-family: "OpenSans"; font-weight: normal; font-sty
 .post .post__img .tags { padding: 10px 15px; }
 
 .article { padding: 30px 0; font-size: 16px; color: #464646; line-height: 1.6; }
+.article hr { display: block; width: 80px; height: 2px; background: #f67f41; margin: 0 0 20px; border-color: #f67f41; }
 .article p { margin-bottom: 30px; }
 .article strong { font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; }
 .article ul { *zoom: 1; margin-bottom: 30px; }
 .article ul:after { content: " "; display: table; clear: both; }
-.article ul li { position: relative; float: left; width: 50%; }
+.article ul li { position: relative; }
 .article ul li:before { content: "·"; display: inline-block; margin-right: 5px; }
+.article ul.narrow li { float: left; width: 50%; }
 .article .medal { font-size: 14px; }
 
 .article-nav { margin-top: -50px; margin-bottom: 2px; }
@@ -579,6 +581,15 @@ body { min-width: 1440px; font-family: "OpenSans"; font-weight: normal; font-sty
 .images .images__item { float: left; width: 49.5%; margin-left: 0.5%; margin-bottom: 0.5%; }
 .images .images__item.wide { width: 100%; }
 .images .images__item img { display: block; width: 100%; }
+
+.partner__list { font-size: 0; margin-left: -20px; margin-bottom: 35px; }
+.partner__list .partner { margin-left: 20px; }
+
+.partner { display: inline-block; vertical-align: top; margin-bottom: 20px; width: 300px; border: 2px solid #ebebeb; }
+.partner .partner__logo { height: 165px; text-align: center; font-size: 0; }
+.partner .partner__logo:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.partner .partner__logo img { display: inline-block; vertical-align: middle; max-height: 100%; }
+.partner .partner__title { padding: 15px; min-height: 90px; background: #ebebeb; text-align: center; font-size: 17px; color: #464646; }
 
 .gallery { position: relative; overflow: auto; }
 .gallery__head { position: relative; background-size: cover; background-position: 50% 50%; }
