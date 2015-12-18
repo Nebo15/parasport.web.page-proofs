@@ -19,7 +19,6 @@
 	position: absolute
 	top: -10px
 	left: 0
-	float: left
 	width: 220px
 	height: 220px
 	border-radius: 0 0 50% 50%
@@ -44,6 +43,20 @@
 		border-radius: 50%
 		font-size: 0	
 		z-index: 2
+	&_sm
+		top: 0
+		width: auto
+		height: auto
+		border: none
+		&:before
+			display: none
+		a
+			width: auto
+			height: 95px
+			+vertical
+			img
+				vertical-align: middle
+		
 		
 .nav
 	float: left

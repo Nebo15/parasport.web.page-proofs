@@ -130,7 +130,47 @@
 			vertical-align: middle
 	&__tags
 		padding: 30px 0
-		border-bottom: 1px solid $lightgrey 
+		border-bottom: 1px solid $lightgrey
+	&__top
+		&-title
+			padding: 30px 0
+	&_gray
+		padding-bottom: 120px
+		background: #F2F2F2
+
+.back
+	display: inline-block
+	height: 62px
+	min-width: 190px
+	padding: 0 20px
+	border-radius: 4px
+	background: #fff
+	transition: background 200ms
+	color: #353535
+	+vertical
+	white-space: nowrap
+	text-decoration: none
+	vertical-align: top
+	&:hover,
+	&:focus,
+	&.is-active
+		+gradient
+		color: #FFF
+	&__center
+		display: inline-block
+		vertical-align: middle
+	&__icon,
+	&__title
+		display: inline-block
+		vertical-align: middle
+	&__icon
+		padding-right: 15px
+		.icon-arr-left
+			font-size: 20px
+	&__title
+		+opensans-eb
+		font-size: 14px
+		text-transform: uppercase
 
 .albums
 	margin-bottom: 90px
