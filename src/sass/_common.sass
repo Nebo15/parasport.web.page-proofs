@@ -41,7 +41,7 @@ $lightgrey: #ebebeb
 
 
 body
-	min-width: 1440px
+	//min-width: 1440px
 	+opensans
 	font-size: 18px
 	line-height: 1.3
@@ -128,7 +128,33 @@ body
 				font-size: 30px
 			&.icon-ok
 				font-size: 23px	
-
+	+r(1100)
+		.cookies__left
+			float: none
+			width: auto
+			overflow: hidden
+		.cookies__right
+			width: auto
+			.cookies__btn
+				display: block
+				margin-top: 5px
+				&:first-child
+					margin-top: 0
+	+r(480)
+		.cookies__in
+			display: flex
+			flex-direction: column
+		.cookies__left
+			order: 1
+			width: 100%
+			margin-bottom: 20px
+			text-align: center
+		.cookies__right
+			order: 2
+			text-align: center			
+			.cookies__btn
+				display: inline-block
+						
 // round
 .round
 	width: 76px

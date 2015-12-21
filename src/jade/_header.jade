@@ -5,12 +5,29 @@ block header
 			.logo
 				a(href="index.html")
 					img(src="img/logo.svg", width="212", alt="")
-			.header__content			
+			button.humb.js-humb
+				span
+			.lang
+				.lang__selected.js-lang-status
+					span EN
+					img(src="img/unionjack.png", alt="")
+				ul.js-lang-list
+					li.lang__item
+						button(type="button").lang__btn.js-lang-btn.active
+							span EN
+							img(src="img/unionjack.png", alt="")
+					li.lang__item
+						button(type="button").lang__btn.js-lang-btn
+							span RU
+							img(src="img/Flag_of_Russia.png", alt="")
+			.header__content.js-mob-menu			
 				nav.nav
 					ul.menu
 						li.menu__link
-							a(href="#").menu__about ABOUT US
-							.dropdown
+							a(href="#").menu__about.js-dropdown-btn
+								span ABOUT US
+								.plus
+							.dropdown.js-dropdown
 								ul
 									li
 										a(href="#") Who we are
@@ -21,8 +38,10 @@ block header
 									li
 										a(href="#") Executive board			
 						li.menu__link
-							a(href="#").menu__programs programmes
-							.dropdown
+							a(href="#").menu__programs.js-dropdown-btn
+								span programmes
+								.plus
+							.dropdown.js-dropdown
 								ul
 									li
 										a(href="#") Paralympic sponsorship
@@ -33,12 +52,16 @@ block header
 									li
 										a(href="#") Helpful links and resources	
 						li.menu__link
-							a(href="#").menu__heroes our heroes			
+							a(href="#").menu__heroes
+								span our heroes	
 						li.menu__link
-							a(href="#").menu__partners partners
+							a(href="#").menu__partners
+								span partners
 						li.menu__link
-							a(href="#").menu__media media & events
-							.dropdown
+							a(href="#").menu__media.js-dropdown-btn
+								span media & events
+								.plus
+							.dropdown.js-dropdown
 								ul
 									li
 										a(href="#") News
@@ -48,11 +71,6 @@ block header
 										a(href="#") Gallery
 									li
 										a(href="#") Events
-				a(href="#").support-link support us
-				ul.lang
-					li.lang__item
-						button(type="button").lang__btn.active
-							img(src="img/unionjack.png", alt="")
-					li.lang__item
-						button(type="button").lang__btn
-							img(src="img/Flag_of_Russia.png", alt="")
+				a(href="#").support-link
+					span support us
+				
