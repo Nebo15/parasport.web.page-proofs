@@ -34,7 +34,16 @@ $(document).ready(function() {
 		autoplay: true,
 		arrows: false,
 		fade: true,
-		dots: true
+		dots: true,
+		responsive: [
+		    {
+		    	breakpoint: 1024,
+		    	settings: {
+		    		dots: false
+		    	}
+		    }
+		]
+
 	});
 
 	$('.js-slider').slick({
@@ -86,8 +95,10 @@ $(document).ready(function() {
 		$('.js-mob-menu').slideToggle();
 	});
 
-	if ($(window).width() < 1024) {
-		$('.js-dropdown-btn').on('click', function(){
+	
+	$('.js-dropdown-btn').on('click', function(){
+		if ($(window).width() < 1024) {
+
 			if ($(this).hasClass('is-open')) {
 				$(this).closest('.menu__link').find('.js-dropdown').slideUp();
 				$(this).removeClass('is-open');
@@ -100,8 +111,97 @@ $(document).ready(function() {
 				$(this).addClass('is-open');
 			}
 			return false;
+		};
+	});
+	
+	// tabs tablet
+
+	$('.js-tabs').each(function(){
+		var tabs = $(this);
+
+		var flag = false;
+
+		var next = tabs.find('.js-tabs-next'),
+			prev = tabs.find('.js-tabs-prev'),
+			wrap = tabs.find('.js-tabs-wrap'),
+			list = tabs.find('.js-tabs-list');
+
+		// detect tablet view	
+		function tabletTabsInit(){
+			if (list.width() > wrap.width()) {
+				next.addClass('is-visible');
+				flag = true;
+			}
+			else {
+				prev.removeClass('is-visible');
+				next.removeClass('is-visible');
+				flag = false;
+			}
+
+			if (flag == true) {
+				function tabletTabs(){
+
+					var diff = list.width() - wrap.width();
+
+					if (wrap.scrollLeft() > 1) {
+						prev.addClass('is-visible');
+						console.log('is-scrolled');
+					}
+					else {
+						prev.removeClass('is-visible');
+						console.log('is-not-scrolled');
+					}
+					if (wrap.scrollLeft() < diff){
+						next.addClass('is-visible');
+					}
+					else {
+						next.removeClass('is-visible');
+						console.log('is-scrolled-to-end');
+					}
+
+				}
+				tabletTabs();
+				$(wrap).scroll(function(){
+					tabletTabs();
+				});
+			};
+		}
+		tabletTabsInit();
+		$(window).resize(function(){
+			tabletTabsInit();
 		});
-	};
+
+		// click next button
+		next.on('click', function(){
+			var scrollPos = wrap.scrollLeft();
+			scrollPos = scrollPos + 193;
+
+			wrap.animate({
+				scrollLeft: scrollPos
+			}, 300);
+		});
+		// click prev button
+		prev.on('click', function(){
+			var scrollPos = wrap.scrollLeft();
+			scrollPos = scrollPos - 193;
+
+			wrap.animate({
+				scrollLeft: scrollPos
+			}, 300);
+		});
+			
+	});
+
+
+
+
+
+
+
+
+
+
+
 
 
 

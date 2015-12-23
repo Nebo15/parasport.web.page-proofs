@@ -77,40 +77,50 @@ block content
 	
 	// carousel
 	.carousel.js-carousel
-		.carousel__item
-			img(src="http://lorempixel.com/1685/579/transport", alt="")
-		.carousel__item
-			img(src="http://lorempixel.com/1685/579/sports", alt="")
-		.carousel__item
-			img(src="http://lorempixel.com/1685/579/nature", alt="")
-		.carousel__item
-			img(src="http://lorempixel.com/1685/579/technics", alt="")
-		.carousel__item
-			img(src="http://lorempixel.com/1685/579/sports", alt="")
-		.carousel__item
-			img(src="http://lorempixel.com/1685/579/people", alt="")			
+		.carousel__item(style="background-image:url(http://lorempixel.com/1920/579/transport);")
+			.carousel__title Our athletes in action
+			.carousel__event London Paralympic Games 2014
+		.carousel__item(style="background-image:url(http://lorempixel.com/1920/579/sports);")
+			.carousel__title Our athletes in action
+			.carousel__event London Paralympic Games 2014
+		.carousel__item(style="background-image:url(http://lorempixel.com/1920/579/nature);")
+			.carousel__title Our athletes in action
+			.carousel__event London Paralympic Games 2014
+		.carousel__item(style="background-image:url(http://lorempixel.com/1920/579/technics);")
+			.carousel__title Our athletes in action
+			.carousel__event London Paralympic Games 2014
+		.carousel__item(style="background-image:url(http://lorempixel.com/1920/579/sports);")
+			.carousel__title Our athletes in action
+			.carousel__event London Paralympic Games 2014
+		.carousel__item(style="background-image:url(http://lorempixel.com/1920/579/people);")
+			.carousel__title Our athletes in action
+			.carousel__event London Paralympic Games 2014			
 	// m-news
 	.m-news
 		.center
 			.tabs
 				.tabs__topper
 					.title News
-					ul.tabs__nav
-						li
-							a(href="#").tabs__link.active
-								span LATEST (12)
-						li
-							a(href="#").tabs__link 
-								span PARALYMPIC team (3)
-						li
-							a(href="#").tabs__link
-								span 2014 (12)
-						li
-							a(href="#").tabs__link 
-								span SOCHI 2014 (32)
-						li
-							a(href="#").tabs__link
-								span London 2012 (14)
+					.tabs-row.js-tabs
+						.tabs-row__prev.js-tabs-prev
+						.tabs-row__next.js-tabs-next
+						.tabs-row__in.js-tabs-wrap
+							ul.tabs__nav.js-tabs-list
+								li
+									a(href="#").tabs__link.active
+										span LATEST (12)
+								li
+									a(href="#").tabs__link 
+										span PARALYMPIC team (3)
+								li
+									a(href="#").tabs__link
+										span 2014 (12)
+								li
+									a(href="#").tabs__link 
+										span SOCHI 2014 (32)
+								li
+									a(href="#").tabs__link
+										span London 2012 (14)
 				.tabs__content								
 					.item-wrap
 						.item-col
@@ -195,94 +205,95 @@ block content
 		.events__in
 			.center
 				.title key events
-			.chronology
-				.chronology__year
-					.chronology__nav
-					.chronology__content
-						.main-event
-							.main-event__title
-								span Parasport founded
-							.main-event__year 1996
-						.event
-							.event__line
-							.round
-								i.icon-human
-							.event__text		
-								p <strong>Oleg Boyko</strong>
-								p <strong>establishes Parasport</strong>	
-				.chronology__year
-					.chronology__nav
-					.chronology__content
-						.main-event
-							.main-event__title
-								span Turin Paralympic Games
-							.main-event__year 2006
-						.event
-							.event__line
-							.round 
-								span 2006
-							.event__text
-								p PARASPORT granted financial aid for Russian Paralympic Team’s participation in Turin Paralympics
-				.chronology__year
-					.chronology__nav
-					.chronology__content
-						.event
-							.event__line
-							.round
-								span 2009
-							.event__text In 2009 PARASPORT participates in financing, training and preparation activities of the Paralympic Team for the X Winter Paralympics 2010 in Vancouver, Canada.		
-				.chronology__year
-					.chronology__nav
-					.chronology__content
-						.main-event
-							.main-event__title
-								span Vancouver Winter Paralympics
-							.main-event__year 2010
-						.event
-							.clr
-								.round
-									span 2010
-								.event__text We establish special grants for athletes - participants of the Vancouver Winter Paralympics of 2010.
+			.chronology-wrap
+				.chronology
+					.chronology__year
+						.chronology__nav
+						.chronology__content
+							.main-event
+								.main-event__title
+									span Parasport founded
+								.main-event__year 1996
+							.event
 								.event__line
-							.clr
 								.round
-									img(src="img/hokkey.png", style="display: inline-block; vertical-align: middle;" alt="")
-								.event__text In 2010 the foundation sponsors the Russian Sledge Hockey Team				 
-				.chronology__year
-					.chronology__nav
-					.chronology__content
-						.event
-							.event__line
-							.round
-								span 2011
-							.event__text We provide financial assistance for  Paralympic Team in their training and preparation for London 2012 Paralympics Games
-				.chronology__year
-					.chronology__nav
-					.chronology__content
-						.main-event
-							.main-event__title
-								span London Paralympic Games
-							.main-event__year 2012
-				.chronology__year
-					.chronology__nav
-					.chronology__content
-						.main-event
-							.main-event__title
-								span Sochi Winter Paralympics
-							.main-event__year 2014
-						.event
-							.round
-								span 2014
-							.event__text Parasport makes large contribution to support paralympics in Sochi
-							.event__line
-				.chronology__year
-					.chronology__nav
-					.chronology__content
-						.main-event
-							.main-event__title
-								span Rio Paralympic Games
-							.main-event__year 2016
-						.event
+									i.icon-human
+								.event__text		
+									p <strong>Oleg Boyko</strong>
+									p <strong>establishes Parasport</strong>	
+					.chronology__year
+						.chronology__nav
+						.chronology__content
+							.main-event
+								.main-event__title
+									span Turin Paralympic Games
+								.main-event__year 2006
+							.event
+								.event__line
+								.round 
+									span 2006
+								.event__text
+									p PARASPORT granted financial aid for Russian Paralympic Team’s participation in Turin Paralympics
+					.chronology__year
+						.chronology__nav
+						.chronology__content
+							.event
+								.event__line
+								.round
+									span 2009
+								.event__text In 2009 PARASPORT participates in financing, training and preparation activities of the Paralympic Team for the X Winter Paralympics 2010 in Vancouver, Canada.		
+					.chronology__year
+						.chronology__nav
+						.chronology__content
+							.main-event
+								.main-event__title
+									span Vancouver Winter Paralympics
+								.main-event__year 2010
+							.event
+								.clr
+									.round
+										span 2010
+									.event__text We establish special grants for athletes - participants of the Vancouver Winter Paralympics of 2010.
+									.event__line
+								.clr
+									.round
+										img(src="img/hokkey.png", style="display: inline-block; vertical-align: middle;" alt="")
+									.event__text In 2010 the foundation sponsors the Russian Sledge Hockey Team				 
+					.chronology__year
+						.chronology__nav
+						.chronology__content
+							.event
+								.event__line
+								.round
+									span 2011
+								.event__text We provide financial assistance for  Paralympic Team in their training and preparation for London 2012 Paralympics Games
+					.chronology__year
+						.chronology__nav
+						.chronology__content
+							.main-event
+								.main-event__title
+									span London Paralympic Games
+								.main-event__year 2012
+					.chronology__year
+						.chronology__nav
+						.chronology__content
+							.main-event
+								.main-event__title
+									span Sochi Winter Paralympics
+								.main-event__year 2014
+							.event
+								.round
+									span 2014
+								.event__text Parasport makes large contribution to support paralympics in Sochi
+								.event__line
+					.chronology__year
+						.chronology__nav
+						.chronology__content
+							.main-event
+								.main-event__title
+									span Rio Paralympic Games
+								.main-event__year 2016
+							.event
 	// m-quote
 	.m-quote
 		.center.m-quote__in
