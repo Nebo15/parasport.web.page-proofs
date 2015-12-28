@@ -48,7 +48,15 @@ $(document).ready(function() {
 
 	$('.js-slider').slick({
 		slidesToShow: 3,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+		    {
+		      breakpoint: 568,
+		      settings: {
+		        slidesToShow: 2
+		      }
+		    }
+		   ] 
 	});
 
 	$('.js-events-slider').slick({
