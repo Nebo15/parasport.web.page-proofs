@@ -192,7 +192,19 @@ $(document).ready(function() {
 			
 	});
 
+	// chronology accordion
 
+	$('.js-chronology-nav').on('click', function(){
+
+		if ($(this).hasClass('is-open')) {
+			$(this).removeClass('is-open');
+			$(this).closest('.js-chronology').find('.js-chronology-content').slideUp();
+		}
+		else {
+			$(this).addClass('is-open');
+			$(this).closest('.js-chronology').find('.js-chronology-content').slideDown();
+		}
+	});
 
 
 

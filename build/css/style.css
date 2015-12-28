@@ -380,6 +380,12 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .chronology { position: relative; min-width: 1440px; padding: 170px 0 50px; *zoom: 1; }
 .chronology:after { content: " "; display: table; clear: both; }
 .chronology:before { content: ""; position: absolute; top: 220px; left: 0; right: 0; height: 5px; background-image: -webkit-gradient(linear, left top, right top, from(#e6edf6), color-stop(5%, #3cafe2), to(#2e3192)); background-image: -webkit-linear-gradient(left, #e6edf6 0%, #3cafe2 5%, #2e3192 100%); background-image: linear-gradient(to right, #e6edf6 0%, #3cafe2 5%, #2e3192 100%); z-index: 1; }
+.chronology .chronology__nav { display: none; position: relative; padding: 4px 0; border-bottom: 1px solid #f1f5fa; border-top: 1px solid #acadaf; text-align: center; font-size: 28px; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; color: #6c6c6c; cursor: pointer; -webkit-transition: background 200ms, border-color 200ms; transition: background 200ms, border-color 200ms; }
+.chronology .chronology__nav:before { content: "+"; position: absolute; top: 5px; right: 10px; font-size: 30px; line-height: 1; color: #6c6c6c; }
+.chronology .chronology__nav.is-open { background: #f1f5fa; border-top-color: #f1f5fa; border-bottom-color: #acadaf; }
+.chronology .chronology__nav.is-open:before { content: "-"; }
+.chronology .chronology__content { *zoom: 1; }
+.chronology .chronology__content:after { content: " "; display: table; clear: both; }
 .chronology .chronology__year { position: relative; float: left; margin-left: 5.5%; z-index: 2; }
 .chronology .chronology__year .main-event { text-align: center; }
 .chronology .chronology__year .main-event .main-event__title { width: 150px; height: 150px; padding: 0 20px; -webkit-border-radius: 50%; border-radius: 50%; margin-bottom: 10px; text-align: center; font-size: 0; }
@@ -804,7 +810,38 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .quotes .quote__name, .quotes .quote__status{ font-size: 14px; }
  .quotes .quote__text{ font-size: 22px; padding-top: 0; }
  .quotes .quote__bottom .btn{ padding: 10px 24px; }
- .item-wrap .item-col{ width: 49.7%; } }
+ .item-wrap .item-col{ width: 49.7%; }
+ .events{ padding: 0 17px 35px; }
+ .events .events__in{ padding: 0; }
+ .events .events__in .title{ padding: 10px 0; text-align: center; }
+ .chronology{ min-width: 1px; padding: 0; }
+ .chronology:before{ display: none; }
+ .chronology .chronology__nav{ display: block; }
+ .chronology .chronology__content{ display: none; padding: 20px 0 35px; }
+ .chronology .chronology__year{ float: none; width: 100%; margin-left: 0; }
+ .chronology .chronology__year .main-event{ float: left; width: 50%; }
+ .chronology .chronology__year .main-event .main-event__title{ margin: 0 auto 10px; }
+ .chronology .chronology__year .main-event .main-event__year{ display: none; }
+ .chronology .chronology__year:nth-child(1) .event{ float: left; width: 50%; margin-left: 0; text-align: center; }
+ .chronology .chronology__year:nth-child(1) .event .round{ margin: 0 auto 5px; }
+ .chronology .chronology__year:nth-child(1) .event .event__line{ display: none; }
+ .chronology .chronology__year:nth-child(1) .event .event__text{ margin-left: 0; }
+ .chronology .chronology__year:nth-child(2) .event{ position: relative; top: auto; left: auto; float: left; width: 50%; margin-left: 0; text-align: center; }
+ .chronology .chronology__year:nth-child(2) .event .round{ display: none; }
+ .chronology .chronology__year:nth-child(2) .event .event__line{ display: none; }
+ .chronology .chronology__year:nth-child(2) .event .event__text{ margin-left: 0; }
+ .chronology .chronology__year:nth-child(3) .event{ position: relative; top: auto; right: auto; width: 100%; }
+ .chronology .chronology__year:nth-child(3) .event .round, .chronology .chronology__year:nth-child(3) .event .event__line{ display: none; }
+ .chronology .chronology__year:nth-child(4) .event{ position: relative; top: auto; left: auto; float: left; width: 50%; text-align: center; }
+ .chronology .chronology__year:nth-child(4) .event .event__line, .chronology .chronology__year:nth-child(4) .event .round{ display: none; }
+ .chronology .chronology__year:nth-child(4) .event .event__text{ overflow: visible; }
+ .chronology .chronology__year:nth-child(4) .event .clr{ border-top: 1px solid #a4a5a7; padding-top: 20px; }
+ .chronology .chronology__year:nth-child(4) .event .clr:first-child{ border-top: none; }
+ .chronology .chronology__year:nth-child(5) .event{ position: relative; top: auto; left: auto; width: 100%; text-align: center; }
+ .chronology .chronology__year:nth-child(5) .event .round, .chronology .chronology__year:nth-child(5) .event .event__line{ display: none; }
+ .chronology .chronology__year:nth-child(7) .event{ position: relative; top: auto; left: auto; float: left; width: 50%; text-align: center; }
+ .chronology .chronology__year:nth-child(7) .event .event__line, .chronology .chronology__year:nth-child(7) .event .round{ display: none; }
+ .chronology .chronology__year:nth-child(8) .chronology__nav{ border-bottom-color: #acadaf; } }
 @media only screen and (max-width: 568px){
  .quotes .quotes__left{ margin-right: 0; float: none; margin-bottom: 15px; }
  .quotes .quotes__img{ margin: 0 auto; }
@@ -820,7 +857,14 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .cookies .cookies__in{ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
  .cookies .cookies__left{ -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; width: 100%; margin-bottom: 20px; text-align: center; }
  .cookies .cookies__right{ -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; text-align: center; }
- .cookies .cookies__right .cookies__btn{ display: inline-block; } }
+ .cookies .cookies__right .cookies__btn{ display: inline-block; }
+ .chronology .chronology__year .main-event{ width: 100%; }
+ .chronology .chronology__year:nth-child(1) .event{ width: 100%; padding-top: 0; }
+ .chronology .chronology__year:nth-child(2) .event{ width: 100%; }
+ .chronology .chronology__year:nth-child(3) .event{ width: 100%; }
+ .chronology .chronology__year:nth-child(4) .event{ width: 100%; }
+ .chronology .chronology__year:nth-child(5) .event{ width: 100%; }
+ .chronology .chronology__year:nth-child(7) .event{ width: 100%; } }
 
 
 
