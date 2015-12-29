@@ -25,11 +25,24 @@
       <div class="header">
         <div class="header__in">
           <div class="logo logo_sm"><a href="index.html"><img src="img/logo-sm.svg" width="34" alt=""></a></div>
-          <div class="header__content">			
+          <button class="humb js-humb"><span></span></button>
+          <div class="lang">
+            <div class="lang__selected js-lang-status"><span>EN</span><img src="img/unionjack.png" alt=""></div>
+            <ul class="js-lang-list">
+              <li class="lang__item">
+                <button type="button" class="lang__btn js-lang-btn active"><span>EN</span><img src="img/unionjack.png" alt=""></button>
+              </li>
+              <li class="lang__item">
+                <button type="button" class="lang__btn js-lang-btn"><span>RU</span><img src="img/Flag_of_Russia.png" alt=""></button>
+              </li>
+            </ul>
+          </div>
+          <div class="header__content js-mob-menu">			
             <nav class="nav">
               <ul class="menu">
-                <li class="menu__link"><a href="#" class="menu__about">ABOUT US</a>
-                  <div class="dropdown">
+                <li class="menu__link"><a href="#" class="menu__about js-dropdown-btn"><span>ABOUT US</span>
+                    <div class="plus"></div></a>
+                  <div class="dropdown js-dropdown">
                     <ul>
                       <li><a href="#">Who we are</a></li>
                       <li><a href="#">Our mission</a></li>
@@ -38,8 +51,9 @@
                     </ul>
                   </div>
                 </li>
-                <li class="menu__link"><a href="#" class="menu__programs">programmes</a>
-                  <div class="dropdown">
+                <li class="menu__link"><a href="#" class="menu__programs js-dropdown-btn"><span>programmes</span>
+                    <div class="plus"></div></a>
+                  <div class="dropdown js-dropdown">
                     <ul>
                       <li><a href="#">Paralympic sponsorship</a></li>
                       <li><a href="#">Paralympic movement</a></li>
@@ -48,10 +62,11 @@
                     </ul>
                   </div>
                 </li>
-                <li class="menu__link"><a href="#" class="menu__heroes">our heroes			</a></li>
-                <li class="menu__link"><a href="#" class="menu__partners">partners</a></li>
-                <li class="menu__link"><a href="#" class="menu__media">media & events</a>
-                  <div class="dropdown">
+                <li class="menu__link"><a href="#" class="menu__heroes"><span>our heroes	</span></a></li>
+                <li class="menu__link"><a href="#" class="menu__partners"><span>partners</span></a></li>
+                <li class="menu__link"><a href="#" class="menu__media js-dropdown-btn"><span>media & events</span>
+                    <div class="plus"></div></a>
+                  <div class="dropdown js-dropdown">
                     <ul>
                       <li><a href="#">News</a></li>
                       <li><a href="#">We are in the news</a></li>
@@ -61,15 +76,7 @@
                   </div>
                 </li>
               </ul>
-            </nav><a href="#" class="support-link">support us</a>
-            <ul class="lang">
-              <li class="lang__item">
-                <button type="button" class="lang__btn active"><img src="img/unionjack.png" alt=""></button>
-              </li>
-              <li class="lang__item">
-                <button type="button" class="lang__btn"><img src="img/Flag_of_Russia.png" alt=""></button>
-              </li>
-            </ul>
+            </nav><a href="#" class="support-link"><span>support us</span></a>
           </div>
         </div>
       </div>

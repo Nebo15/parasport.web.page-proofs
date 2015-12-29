@@ -458,7 +458,7 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .slider .slider__item a:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .slider .slider__item a img { display: inline-block; vertical-align: middle; }
 
-.footer { position: relative; padding: 25px 0; min-height: 250px; background: url(../img/footer-bg.jpg) no-repeat; background-size: 100%; }
+.footer { position: relative; padding: 25px 0; min-height: 250px; background: url(../img/footer-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .footer .footer__in { font-size: 0; }
 .footer .footer__logo { display: inline-block; vertical-align: middle; margin-right: 50px; }
 .footer .footer__menu { display: inline-block; vertical-align: middle; margin-right: 30px; }
@@ -744,6 +744,9 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .logo{ left: -25px; width: 150px; height: 150px; }
  .logo a{ width: 142px; height: 142px; }
  .logo a img{ width: 100%; }
+ .logo_sm{ height: 95px; }
+ .logo_sm a{ width: auto; height: 95px; }
+ .logo_sm a img{ width: 34px; }
  .menu .menu__link{ padding: 4px 30px; }
  .quotes .quote__text{ font-size: 36px; margin-bottom: 50px; } }
 @media only screen and (max-width: 1280px){
@@ -779,6 +782,8 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .header .header__in{ height: 75px; }
  .header .header__content{ display: none; position: absolute; top: 79px; left: -10px; right: -10px; padding: 40px 20px; background: #fff; text-align: center; z-index: 3; }
  .logo:before{ height: 85px; }
+ .logo_sm{ height: 75px; }
+ .logo_sm a{ height: 75px; }
  .nav{ float: none; }
  .menu .menu__link{ float: none; padding: 10px; border-bottom: 1px solid #d1d1d1; border-left: none; }
  .menu .menu__link:hover > a:after{ opacity: 0; }
@@ -863,7 +868,7 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .footer .footer__link a{ font-size: 18px; }
  .gallery{ overflow: inherit; }
  .gallery__list{ white-space: normal; }
- .gallery__col{ width: 50%; }
+ .gallery__col{ width: 50%; padding: 0 2px; }
  .gallery__col:nth-child(2n+1){ margin-top: 0; }
  .gallery__col:nth-child(4n+1){ margin-top: 0; }
  .gallery__link{ width: 100%; height: auto; } }

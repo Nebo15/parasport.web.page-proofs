@@ -84,7 +84,17 @@
 			+vertical
 			img
 				vertical-align: middle
-		
+		+r(1440)
+			height: 95px
+			a
+				width: auto
+				height: 95px
+				img
+					width: 34px
+		+r(1023)					
+			height: 75px
+			a
+				height: 75px
 		
 .nav
 	float: left
@@ -1292,8 +1302,8 @@
 	position: relative
 	padding: 25px 0
 	min-height: 250px 
-	background: url(../img/footer-bg.jpg) no-repeat
-	background-size: 100%
+	background: url(../img/footer-bg.jpg)
+	+cover
 	.footer__in
 		font-size: 0
 		+r(768)
