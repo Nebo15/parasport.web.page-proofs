@@ -44,16 +44,21 @@ block content
 						h1.h1 Programmers
 						p PARASPORT strives to provide sufficient funding and charitable programs to para-athletes through active cooperation with the National Paralympic Committees. Today the foundation works to develop charitable programs in two major fields.
 				.tabs
-					ul.tabs__nav
-						li
-							a(href="#").tabs__link.active
-								span Paralympic<br>sponsorship
-						li
-							a(href="#").tabs__link
-								span Paralympic<br>Movement
-						li
-							a(href="#").tabs__link
-								span Training
+					.tabs__topper
+						.tabs-row.js-tabs
+							.tabs-row__prev.js-tabs-prev
+							.tabs-row__next.js-tabs-next
+							.tabs-row__in.js-tabs-wrap
+								ul.tabs__nav.js-tabs-list
+									li
+										a(href="#").tabs__link.active
+											span Paralympic<br>sponsorship
+									li
+										a(href="#").tabs__link 
+											span Paralympic<br>Movement
+									li
+										a(href="#").tabs__link
+											span Training
 					.tabs__content
 						.programmers
 							article.article

@@ -632,6 +632,8 @@
 		font-size: 0
 		padding: 0 10px
 		margin-bottom: 40px
+		+r(900)
+			padding: 0 
 	.title
 		float: left
 		padding-top: 15px
@@ -1556,9 +1558,8 @@
 		overflow: hidden
 		font-size: 17px
 		.tabs__topper
-			+r(900)
-				margin-bottom: 0
-				padding: 0  
+			margin-bottom: 0
+			padding: 0  
 		+r(600)
 			overflow: visible
 		p
@@ -2053,13 +2054,29 @@
 			width: 100%
 		img
 			display: block
-			width: 100% 
+			width: 100%
+		+r(600)
+			float: none
+			width: 100%
+			margin-left: 0  	
 .partner__list
 	font-size: 0
 	margin-left: -20px
 	margin-bottom: 35px
 	.partner
-		margin-left: 20px 
+		margin-left: 20px
+	+r(1024)
+		margin-left: -2%
+		.partner
+			width: 48% 
+			margin-left: 2%
+	+r(900)
+		margin-bottom: 0		
+	+r(480)
+		margin-left: 0
+		.partner
+			width: 100%
+			margin-left: 0  		  	 	 
 .partner
 	display: inline-block
 	vertical-align: top
@@ -2073,13 +2090,14 @@
 			display: inline-block
 			vertical-align: middle
 			max-height: 100%
+			max-width: 100%
 	.partner__title
 		padding: 15px
 		min-height: 90px
 		background: #ebebeb
 		text-align: center
 		font-size: 17px
-		color: #464646 
+		color: #464646	
 
 .programmers
 	.article
