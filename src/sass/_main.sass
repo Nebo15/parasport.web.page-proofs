@@ -806,6 +806,7 @@
 	text-align: center 		
 .tags
 	font-size: 0
+	margin-left: -8px 
 	span
 		display: inline-block
 		vertical-align: middle
@@ -820,6 +821,9 @@
 			display: inline-block
 			vertical-align: middle
 			margin-left: 8px
+			margin-bottom: 8px
+			font-size: 14px
+			color: #787878 	
 			&:first-child
 				margin-left: 0 
 			a
@@ -1419,7 +1423,22 @@
 	.sidebar
 		float: right
 		width: 266px
-		padding: 9px 0 0 20px 
+		padding: 9px 0 0 20px
+	+r(900)
+		.main
+			padding: 0 10px
+			display: flex
+			flex-direction: column
+			& > .breadcrumbs
+				order: 1
+		.content
+			order: 2
+			overflow: visible
+		.sidebar
+			float: none
+			order: 3
+			width: 100%
+			padding: 9px 0 0  		 
 
 .breadcrumbs
 	clear: both
@@ -1460,6 +1479,9 @@
 		width: 50%
 		padding-right: 1% 
 		+clr
+		+r(600)
+			width: 100%
+			padding-right: 0  
 	.board__left
 		float: left
 		width: 76px
@@ -1494,6 +1516,8 @@
 	.topper__in
 		overflow: hidden
 		font-size: 17px
+		+r(600)
+			overflow: visible
 		p
 			margin-bottom: 60px
 	&.topper_wide
@@ -1514,6 +1538,14 @@
 	img
 		width: 150px
 		margin-bottom: 30px
+		+r(900)
+			display: inline-block
+			vertical-align: middle
+			margin-bottom: 0
+			margin-right: 30px
+		+r(600)
+			display: block
+			margin: 0 auto 20px 	 
 	.btn
 		height: 40px
 		width: 160px

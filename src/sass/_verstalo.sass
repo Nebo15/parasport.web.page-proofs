@@ -120,32 +120,22 @@
 	&__sort
 		background: $lightgrey
 		padding: 5px 0
-		&-center
-			font-size: 0
-		&-item
-			display: inline-block
-			height: 62px
-			width: 190px
-			margin-right: 5px
-			border-radius: 4px
+		.center
+			padding: 0 
+		.tabs__topper
+			margin-bottom: 0
+			padding-top: 5px
+			.tabs__link
+				background: #fff
+				&.active, &:active
+					+gradient
+				&:hover
+					background: #90cc00
+		+r(1440)
 			background: #fff
-			transition: background 200ms
-			color: #353535
-			text-align: center
-			+vertical
-			text-decoration: none
-			vertical-align: top
-			&:hover
-				background: $green
-			&:focus,
-			&.is-active
-				+gradient
-				+opensans-eb
-				color: #FFF
-		&-title
-			display: inline-block
-			font-size: 14px
-			vertical-align: middle
+			.tabs__topper
+				.tabs__link
+					background: #ebebeb  			
 	&__tags
 		padding: 30px 0
 		border-bottom: 1px solid $lightgrey
@@ -197,12 +187,22 @@
 	&__list
 		margin: 0 -2px 40px
 		font-size: 0
+		+r(1280)
+			margin: 0 0 40px 
 	&__item
 		display: inline-block
 		position: relative
 		width: 292px
 		margin: 0 2px 4px
 		vertical-align: top
+		+r(1280)
+			width: 25%
+			margin: 0 0 4px
+			padding: 0 2px
+		+r(900)
+			width: 50%
+		+r(568)
+			width: 100% 		   
 	&__link
 		display: block
 		background: #EBEBEB 
@@ -215,7 +215,9 @@
 		opacity: 1
 	&__preview
 		position: relative
-		height: 200px
+		img
+			display: block
+			width: 100% 
 	&__plus
 		position: absolute
 		top: 0

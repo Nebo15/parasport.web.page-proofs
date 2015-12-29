@@ -26,26 +26,38 @@ block content
 								a(href="#") Gallery
 		//- tabs
 		.gallery__sort
-			.gallery__sort-center.center
-				a.gallery__sort-item.is-active(href="#")
-					.gallery__sort-title 2015
-				a.gallery__sort-item(href="#")
-					.gallery__sort-title 2014
-				a.gallery__sort-item(href="#")
-					.gallery__sort-title 2013
-				a.gallery__sort-item(href="#")
-					.gallery__sort-title 2012
-				a.gallery__sort-item(href="#")
-					.gallery__sort-title 2011
-				a.gallery__sort-item(href="#")
-					.gallery__sort-title 2010
+			.tabs.center
+				.tabs__topper
+					.tabs-row.js-tabs
+						.tabs-row__prev.js-tabs-prev
+						.tabs-row__next.js-tabs-next
+						.tabs-row__in.js-tabs-wrap
+							ul.tabs__nav.js-tabs-list
+								li
+									a(href="#").tabs__link.active
+										span 2015
+								li
+									a(href="#").tabs__link 
+										span 2014
+								li
+									a(href="#").tabs__link
+										span 2013
+								li
+									a(href="#").tabs__link 
+										span 2012
+								li
+									a(href="#").tabs__link
+										span 2011
+								li
+									a(href="#").tabs__link
+										span 2010
 		.gallery__tags
 			//- center
 			.gallery__center.center
 				//- tags
-				.gallery__tags-wrap.tags.tags_gray
-					span Tags:
+				.tags.tags_gray
 					ul
+						li Tags: 
 						li
 							a.tag.active(href="#") All
 						li
