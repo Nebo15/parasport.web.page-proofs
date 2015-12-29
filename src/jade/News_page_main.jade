@@ -23,31 +23,36 @@ block content
 					h1.h1 News
 				.topper__in
 					.tabs
-						ul.tabs__nav
-							li
-								a(href="#").tabs__link.active
-									span LATEST (12)
-									i.icon-close-thin
-							li
-								a(href="#").tabs__link
-									span PARALYMPIC team (3)
-									i.icon-close-thin
-							li
-								a(href="#").tabs__link
-									span 2014 (12)
-									i.icon-close-thin
-							li
-								a(href="#").tabs__link 
-									span SOCHI 2014 (32)
-									i.icon-close-thin
-							li
-								a(href="#").tabs__link
-									span London 2012 (14)
-									i.icon-close-thin
-							li
-								a(href="#").tabs__link
-									span London 2012 (14)
-									i.icon-close-thin		
+						.tabs__topper
+							.tabs-row.js-tabs
+								.tabs-row__prev.js-tabs-prev
+								.tabs-row__next.js-tabs-next
+								.tabs-row__in.js-tabs-wrap
+									ul.tabs__nav.js-tabs-list
+										li
+											a(href="#").tabs__link.active
+												span LATEST (12)
+												i.icon-close-thin
+										li
+											a(href="#").tabs__link
+												span PARALYMPIC team (3)
+												i.icon-close-thin
+										li
+											a(href="#").tabs__link
+												span 2014 (12)
+												i.icon-close-thin
+										li
+											a(href="#").tabs__link 
+												span SOCHI 2014 (32)
+												i.icon-close-thin
+										li
+											a(href="#").tabs__link
+												span London 2012 (14)
+												i.icon-close-thin
+										li
+											a(href="#").tabs__link
+												span London 2012 (14)
+												i.icon-close-thin		
 			aside.sidebar
 				.widget.calendar
 					.calendar__topper
@@ -241,7 +246,7 @@ block content
 											a(href="#").tag 2015
 										li
 											a(href="#").tag Paralympic Team
-					.item-col
+					.item-col.item-col_large
 						.item.item_large
 							.item__img
 								img(src="img/img1.jpg", alt="")
