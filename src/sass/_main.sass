@@ -791,6 +791,7 @@
 		bottom: 10px
 		left: 10px
 		right: 10px
+		margin-left: 0 
 	&.item_large
 		width: 595px 
 		.item__img
@@ -1650,6 +1651,8 @@
 								 		 
 // hero
 .hero
+	+r(568)
+		padding-top: 20px
 	.hero__info
 		+clr
 		margin-bottom: 30px
@@ -1659,7 +1662,11 @@
 		margin-right: 15px
 		img
 			display: block
-			width: 100% 
+			width: 100%
+		+r(568)
+			width: 100%
+			float: none
+			margin-bottom: 20px 	 
 	.hero__about
 		overflow: hidden
 		table
@@ -1675,6 +1682,8 @@
 						color: #464646 
 						p
 							margin-bottom: 10px
+		+r(568)
+			overflow: visible					
 	.hero__medals
 		font-size: 0
 	.hero__content
@@ -1699,6 +1708,8 @@
 	margin-bottom: 30px
 	padding-right: 3%
 	font-size: 17px
+	+r(600)
+		width: 100% 
 	.round
 		float: left
 		margin-right: 20px 								 
@@ -1788,7 +1799,11 @@
 		&.narrow
 			li
 				float: left
-				width: 50%		
+				width: 50%
+			+r(600)
+				li
+					float: none
+					width: 100% 			
 	.medal
 		font-size: 14px		 
 
@@ -1810,29 +1825,79 @@
 		width: 50%
 		background: #d6dfea
 		padding: 60px 0 80px
-	.artcile-nav__arrow, .article-nav__block
+		+r(900)
+			padding: 50px 0
+		+r(767)
+			width: 100%
+			text-align: center
+	.article-nav__prev
+		+r(767)
+			padding-bottom: 0 			
+	.article-nav__arrow, .article-nav__block
 		display: inline-block
 		vertical-align: middle
 	.article-nav__block
 		.item
-			background: #e6edf6 	
-	.artcile-nav__arrow
+			background: #e6edf6
+			+r(1280)
+				width: 296px  	
+	.article-nav__arrow
 		i
 			font-size: 38px
 			color: #7e7f80  		
 	.article-nav__prev
+		position: relative
 		border-right: 1px solid #fff
 		text-align: right
 		padding-right: 150px
-		.artcile-nav__arrow
+		.article-nav__arrow
 			margin-right: 150px
 		.article-nav__block
-			text-align: left	
+			text-align: left
+		+r(1280)
+			padding-right: 50px
+			.article-nav__arrow
+				margin-right: 50px
+		+r(900)
+			padding-right: 25px
+			.article-nav__arrow
+				margin-right: 25px
+		+r(767)
+			padding-right: 0 
+			.article-nav__arrow
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-left: -200px
+				margin-right: 0
+		+r(414)
+			.article-nav__arrow
+				display: none		 		  		
 	.article-nav__next
+		position: relative
 		border-left: 1px solid #fff
 		padding-left: 150px	 
-		.artcile-nav__arrow
+		.article-nav__arrow
 			margin-left: 150px
+		+r(1280)
+			padding-left: 50px
+			.article-nav__arrow
+				margin-left: 50px
+		+r(900)
+			padding-left: 25px
+			.article-nav__arrow
+				margin-left: 25px
+		+r(767)
+			padding-left: 0 
+			.article-nav__arrow
+				position: absolute
+				top: 50%
+				right: 50%
+				margin-right: -200px
+				margin-left: 0
+		+r(414)
+			.article-nav__arrow
+				display: none				 			
 
 // calendar
 .calendar
