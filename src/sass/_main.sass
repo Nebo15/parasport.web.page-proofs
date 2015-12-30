@@ -305,7 +305,10 @@
 	margin-left: 30px
 	margin-right: 20px
 	padding: 11px 0
-	background: none  
+	background: none
+	&::-moz-focus-inner
+		border: 0
+		padding: 0
 	span
 		display: block
 		height: 4px
@@ -1591,7 +1594,7 @@
 			vertical-align: middle
 			margin-bottom: 0
 			margin-right: 30px
-		+r(600)
+		+r(830)
 			display: block
 			margin: 0 auto 20px 	 
 	.btn
@@ -1745,7 +1748,7 @@
 				display: inline-block
 				margin-right: 5px
 .medals
-	font-size: 0						
+	font-size: 0
 .medal
 	display: inline-block
 	vertical-align: top
@@ -1757,7 +1760,21 @@
 		width: 100% 
 	.round
 		float: left
-		margin-right: 20px 								 
+		margin-right: 20px
+		+r(600)
+			display: inline-block
+			vertical-align: middle
+			float: none
+		+r(400)
+			vertical-align: top
+	.round + p
+		overflow: hidden
+		+r(600)
+			display: inline-block
+			vertical-align: middle
+			width: calc(100% - 101px)
+		+r(400)
+			vertical-align: top
 	.medal__left
 		width: 76px
 		float: left
@@ -1769,7 +1786,7 @@
 			color: #6c6c6c
 			strong
 				+opensans-sb
-				font-size: 25px   					 
+				font-size: 25px 
 // post
 .post
 	.post__details

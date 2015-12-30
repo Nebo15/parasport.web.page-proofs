@@ -267,6 +267,7 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .support-link:hover span { color: #fff; }
 
 .humb { display: none; position: relative; float: right; width: 30px; margin-top: 24px; margin-left: 30px; margin-right: 20px; padding: 11px 0; background: none; }
+.humb::-moz-focus-inner { border: 0; padding: 0; }
 .humb span { display: block; height: 4px; background: #9d9d9d; -webkit-transition: opacity 200ms; transition: opacity 200ms; }
 .humb:before, .humb:after { content: ""; position: absolute; left: 0; right: 0; height: 4px; background: #9d9d9d; -webkit-transition: -webkit-transform 300ms; transition: -webkit-transform 300ms; transition: transform 300ms; transition: transform 300ms, -webkit-transform 300ms; will-change: transform; }
 .humb:before { top: 0; -webkit-transform-origin: 3px 1px; -ms-transform-origin: 3px 1px; transform-origin: 3px 1px; }
@@ -562,6 +563,7 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 
 .medal { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 30px; padding-right: 3%; font-size: 17px; }
 .medal .round { float: left; margin-right: 20px; }
+.medal .round + p { overflow: hidden; }
 .medal .medal__left { width: 76px; float: left; margin-right: 20px; text-align: center; }
 .medal .medal__left p { margin-bottom: 0; font-size: 14px; color: #6c6c6c; }
 .medal .medal__left p strong { font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; font-size: 25px; }
@@ -844,8 +846,11 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .article-nav .article-nav__next .article-nav__arrow{ margin-left: 25px; }
  .partner__list{ margin-bottom: 0; }
  .albums__item{ width: 50%; }
+ .albums__info{ min-height: 120px; }
  .sitemap{ -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
  .sitemap__item{ padding-right: 3.33%; width: 50%; } }
+@media only screen and (max-width: 830px){
+ .widget img{ display: block; margin: 0 auto 20px; } }
 @media only screen and (max-width: 768px){
  .title{ text-align: center; }
  .quotes .quotes__in{ padding: 78px 60px; }
@@ -925,8 +930,9 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .board .board__item{ width: 100%; padding-right: 0; }
  .topper .topper__in{ overflow: visible; }
  .widget{ float: none; width: 100%; margin-left: 0; }
- .widget img{ display: block; margin: 0 auto 20px; }
  .medal{ width: 100%; }
+ .medal .round{ display: inline-block; vertical-align: middle; float: none; }
+ .medal .round + p{ display: inline-block; vertical-align: middle; width: -webkit-calc(100% - 101px); width: calc(100% - 101px); }
  .article.narrow li{ float: none; width: 100%; }
  .images .images__item{ float: none; width: 100%; margin-left: 0; }
  .sitemap__item{ width: 100%; }
@@ -973,6 +979,9 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 @media only screen and (max-width: 414px){
  .article-nav .article-nav__prev .article-nav__arrow{ display: none; }
  .article-nav .article-nav__next .article-nav__arrow{ display: none; } }
+@media only screen and (max-width: 400px){
+ .medal .round{ vertical-align: top; }
+ .medal .round + p{ vertical-align: top; } }
 
 
 
