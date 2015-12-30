@@ -206,8 +206,8 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 
 .quote { padding-top: 15px; max-width: 500px; border-top: 2px solid #f67f41; }
 .quote quote { position: relative; display: block; padding-top: 30px; font-size: 25px; color: #6c6c6c; font-family: "OpenSans-Semibold"; font-weight: normal; font-style: normal; margin-bottom: 30px; }
-.quote quote:before { content: "тАЬ"; position: absolute; top: -20px; left: 0; font: 100px "Times New Roman", serif; color: #6c6c6c; }
-.quote quote:after { content: "тАЭ"; display: inline-block; font-family: "Times New Roman", serif; }
+.quote quote:before { content: "“"; position: absolute; top: -20px; left: 0; font: 100px "Times New Roman", serif; color: #6c6c6c; }
+.quote quote:after { content: "”"; display: inline-block; font-family: "Times New Roman", serif; }
 
 .header { position: relative; padding: 0 10px; border-bottom: 4px solid #eaeaea; }
 .header .header__in { position: relative; max-width: 1400px; *zoom: 1; margin: 0 auto; padding-left: 220px; height: 95px; background: #fff; }
