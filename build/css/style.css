@@ -839,6 +839,7 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .topper .topper__left{ float: none; width: 100%; }
  .widget{ float: left; width: 49%; margin-left: 1%; }
  .widget img{ display: inline-block; vertical-align: middle; margin-bottom: 0; margin-right: 30px; }
+ .article-nav.article-nav_tmarg{ margin-top: 20px; }
  .article-nav .article-nav__prev, .article-nav .article-nav__next{ padding: 50px 0; }
  .article-nav .article-nav__prev{ padding-right: 25px; }
  .article-nav .article-nav__prev .article-nav__arrow{ margin-right: 25px; }
