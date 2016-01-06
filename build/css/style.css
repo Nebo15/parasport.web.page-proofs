@@ -917,12 +917,10 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .gallery__col:nth-child(4n+1){ margin-top: 0; }
  .gallery__link{ width: 100%; height: auto; } }
 @media only screen and (max-width: 767px){
- .article-nav .article-nav__prev, .article-nav .article-nav__next{ width: 100%; text-align: center; }
- .article-nav .article-nav__prev{ padding-bottom: 0; }
- .article-nav .article-nav__prev{ padding-right: 0; }
- .article-nav .article-nav__prev .article-nav__arrow{ position: absolute; top: 50%; left: 50%; margin-left: -200px; margin-right: 0; }
- .article-nav .article-nav__next{ padding-left: 0; }
- .article-nav .article-nav__next .article-nav__arrow{ position: absolute; top: 50%; right: 50%; margin-right: -200px; margin-left: 0; } }
+ .article-nav .article-nav__block .item{ width: 100%; }
+ .article-nav .article-nav__block{ width: 88%; }
+ .article-nav .article-nav__prev .article-nav__arrow{ position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 10px; margin: inherit; z-index: 10; }
+ .article-nav .article-nav__next .article-nav__arrow{ position: absolute; top: 50%; right: 10px; margin: inherit; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: 10; } }
 @media only screen and (max-width: 640px){
  .error .error__bottom li{ text-align: center; } }
 @media only screen and (max-width: 600px){
