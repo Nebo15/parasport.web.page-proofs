@@ -958,7 +958,8 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
  .item-wrap .item-col{ width: 100%; margin-left: 0; }
  .main .item-wrap{ margin-left: 0; }
  .main .item-wrap .item-col{ width: 100%; margin-left: 0; }
- .item .item__content{ height: auto; min-height: 200px; }
+ .item .item__content{ height: auto; }
+ .item .item__content .date{ margin-bottom: 15px; }
  .item.item_large .item__img{ width: 100%; height: 200px; }
  .item.item_large .item__content{ width: 100%; height: auto; } }
 @media only screen and (max-width: 480px){
