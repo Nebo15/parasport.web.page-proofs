@@ -3,7 +3,7 @@
 .header
 	position: relative
 	padding: 0 10px
-	border-bottom: 4px solid #eaeaea
+	border-bottom: 4px solid $gray2
 	.header__in
 		position: relative
 		max-width: 1400px
@@ -11,7 +11,7 @@
 		margin: 0 auto
 		padding-left: 220px
 		height: 95px
-		background: #fff
+		background: $white
 		+r(1440)
 			padding-left: 150px
 		+r(1280)
@@ -28,7 +28,7 @@
 			left: -10px
 			right: -10px
 			padding: 40px 20px
-			background: #fff
+			background: $white
 			text-align: center
 			z-index: 3  	 
 .logo
@@ -39,8 +39,8 @@
 	height: 220px
 	border-radius: 0 0 50% 50%
 	border-width: 0 0 4px 4px
-	border: 4px solid #eaeaea
-	background: #fff
+	border: 4px solid $gray2
+	background: $white
 	z-index: 4
 	&:before
 		content: ""
@@ -49,7 +49,7 @@
 		left: -4px
 		right: -4px
 		height: 105px
-		background: #fff
+		background: $white
 		z-index: 1 
 	a
 		position: relative
@@ -124,7 +124,7 @@
 		+r(1023)
 			float: none
 			padding: 10px
-			border-bottom: 1px solid #d1d1d1
+			border-bottom: 1px solid $lightgrey2
 			border-left: none
 			&:hover
 				& > a
@@ -163,7 +163,7 @@
 					left: 8px
 					width: 3px
 					height: 19px
-					background: #8c8c8c
+					background: $darkgrey2
 					transition: transform 400ms
 				&:after
 					content: ""
@@ -171,7 +171,7 @@
 					top: 8px
 					height: 3px
 					width: 19px
-					background: #8c8c8c
+					background: $darkgrey2
 					transition: transform 400ms 	  
 				+r(1023)
 					display: block	
@@ -182,12 +182,12 @@
 					&:after
 						transform: rotate(180deg)			
 			&.menu__about
-				color: #8c8c8c
+				color: $darkgrey2
 				&:after
-					border-color: #8c8c8c
+					border-color: $darkgrey2
 				.plus
 					&:before, &:after
-						background: #8c8c8c	 
+						background: $darkgrey2	 
 			&.menu__programs
 				color: $darkblue
 				&:after
@@ -226,7 +226,7 @@
 	top: 100%
 	left: 0
 	width: 336px
-	background: #fff
+	background: $white
 	padding: 25px
 	opacity: 0
 	visibility: hidden
@@ -267,7 +267,7 @@
 	line-height: 36px
 	border-radius: 3px
 	text-align: center
-	background: #eaeaea
+	background: $gray2
 	text-decoration: none
 	span
 		color: $orange
@@ -279,7 +279,7 @@
 	&:hover
 		background: $orange
 		span
-			color: #fff 
+			color: $white 
 	+r(1023)
 		display: block
 		float: none
@@ -289,7 +289,7 @@
 		padding: 5px 0 
 		background: none
 		font-size: 20px
-		border-bottom: 1px solid #d1d1d1
+		border-bottom: 1px solid $lightgrey2
 		span
 			font-size: 20px
 		&:hover
@@ -312,7 +312,7 @@
 	span
 		display: block
 		height: 4px
-		background: #9d9d9d
+		background: $grey3
 		transition: opacity 200ms
 	&:before, &:after
 		content: ""
@@ -320,7 +320,7 @@
 		left: 0
 		right: 0
 		height: 4px
-		background: #9d9d9d
+		background: $grey3
 		transition: transform 300ms
 		will-change: transform
 	&:before
@@ -351,7 +351,7 @@
 			margin-right: 10px 
 			font-size: 16px
 			text-transform: uppercase
-			color: #9d9d9d
+			color: $grey3
 			+opensans-sb
 		img
 			display: inline-block
@@ -385,7 +385,7 @@
 				margin-right: 10px 
 				font-size: 16px
 				text-transform: uppercase
-				color: #9d9d9d
+				color: $grey3
 				+opensans-sb
 			img
 				display: inline-block
@@ -417,9 +417,9 @@
 			left: 50%
 			transform: translateX(-50%)
 			margin: 0 
-			background: #fff
+			background: $white
 			border-radius: 6px
-			border: 2px solid #d1d1d1
+			border: 2px solid $lightgrey2
 			transition: opacity 200ms
 			&.is-open
 				opacity: 1
@@ -433,7 +433,7 @@
 					span
 						display: inline-block
 					&.active
-						background: #d1d1d1
+						background: $lightgrey2
 						span
 							text-decoration: underline	
 
@@ -551,7 +551,7 @@
 			margin-right: -75px 		
 	.quote__name, .quote__status
 		font-size: 19px
-		color: #fff
+		color: $white
 		+r(768)
 			font-size: 14px
 	.quote__name
@@ -562,7 +562,7 @@
 		margin-bottom: 75px
 		padding-top: 35px
 		font-size: 47px
-		color: #fff
+		color: $white
 		+opensans-sb
 		text-shadow: -1.4px 1.4px 2px rgba(0, 0, 0, 0.35)
 		line-height: 55px
@@ -601,7 +601,7 @@
 		position: absolute
 		top: 50px
 		left: 10%
-		color: #fff
+		color: $white
 		+opensans-eb
 		text-transform: uppercase
 		font-size: 22px
@@ -616,7 +616,7 @@
 		bottom: 50px
 		right: 10%
 		font-size: 17px
-		color: #fff
+		color: $white
 		z-index: 2
 		+r(1023)
 			left: 10px
@@ -661,7 +661,7 @@
 				visibility: visible
 		.tabs-row__prev
 			left: 0
-			background-image: linear-gradient(to left, rgba(#fff, 0) 0%, rgba(#fff, 0.7) 50%, rgba(#fff, 1) 100%)
+			background-image: linear-gradient(to left, rgba($white, 0) 0%, rgba($white, 0.7) 50%, rgba($white, 1) 100%)
 			&:after
 				content: ""
 				position: absolute
@@ -670,7 +670,7 @@
 				+arr(12, 15, #707070, l)
 		.tabs-row__next
 			right: 0
-			background-image: linear-gradient(to right, rgba(#fff, 0) 0%, rgba(#fff, 0.7) 50%, rgba(#fff, 1) 100%)
+			background-image: linear-gradient(to right, rgba($white, 0) 0%, rgba($white, 0.7) 50%, rgba($white, 1) 100%)
 			&:after
 				content: ""
 				position: absolute
@@ -711,18 +711,18 @@
 			display: inline-block
 			vertical-align: middle
 			margin-left: 20px
-			color: #fff
+			color: $white
 			&.icon-close-thin
 				font-size: 20px
 				display: none 	
 		&:hover
 			background: $green
 			span
-				color: #fff 
+				color: $white 
 		&:focus, &.active
 			+gradient
 			span
-				color: #fff
+				color: $white
 				+opensans-eb
 		&.active
 			i
@@ -730,13 +730,13 @@
 					display: inline-block
 	&.tabs_light
 		.tabs__link
-			background: #fff
+			background: $white
 			&:hover
 				background: $green
 			&:focus, &.active
 				+gradient
 				span
-					color: #fff
+					color: $white
 					+opensans-eb
 .item-wrap
 	+clr
@@ -850,7 +850,7 @@
 		margin-right: 10px
 		margin-bottom: 5px
 		font-size: 14px
-		color: #787878 		
+		color: $gray3 		
 	ul
 		display: inline-block
 		vertical-align: middle
@@ -860,20 +860,20 @@
 		margin-left: 8px
 		margin-bottom: 8px
 		font-size: 14px
-		color: #787878
+		color: $gray3
 		a
 			display: block
 			border-radius: 8px
-			background: #fff
+			background: $white
 			padding: 5px 15px
 			font-size: 14px
-			color: #787878
+			color: $gray3
 			+opensans-sb
 			text-decoration: none
 			transition: background 200ms, color 200ms
 			&:hover
 				background: $green
-				color: #fff
+				color: $white
 	&.tags_gray
 		li
 			a
@@ -884,7 +884,7 @@
 	font-size: 14px
 	color: #929292 				 		   	 
 .events
-	background: #e6edf6
+	background: $gray4
 	padding: 50px 0 
 	.events__in
 		position: relative
@@ -913,7 +913,7 @@
 		left: 0
 		right: 0
 		height: 5px
-		background-image: linear-gradient(to right, #e6edf6 0%, #3cafe2 5%, #2e3192 100%)  
+		background-image: linear-gradient(to right, $gray4 0%, #3cafe2 5%, #2e3192 100%)  
 		z-index: 1
 	+r(768)
 		min-width: 1px
@@ -980,7 +980,7 @@
 					display: inline-block
 					vertical-align: middle
 					font-size: 16px
-					color: #fff
+					color: $white
 				+r(768)
 					margin: 0 auto 10px 	 
 			.main-event__year
@@ -1252,7 +1252,7 @@
 			margin: 0 auto 20px 	
 	.m-quote__content
 		overflow: hidden
-		color: #fff 
+		color: $white 
 		+r(768)
 			text-align: center
 		+r(568)
@@ -1366,7 +1366,7 @@
 		margin-left: 35px 
 		a
 			font-size: 16px
-			color: #fff
+			color: $white
 			text-decoration: none
 			&:hover
 				text-decoration: underline
@@ -1387,7 +1387,7 @@
 			vertical-align: middle
 			margin-right: 30px
 			font-size: 16px
-			color: #fff 
+			color: $white 
 		ul
 			display: inline-block
 			vertical-align: middle
@@ -1401,10 +1401,10 @@
 				line-height: 54px
 				text-align: center
 				margin-left: 5px
-				background: rgba(#fff, 0.2)
+				background: rgba($white, 0.2)
 				i
 					vertical-align: middle
-					color: #fff
+					color: $white
 					&.icon-tw
 						font-size: 24px
 					&.icon-fb
@@ -1429,13 +1429,13 @@
 		vertical-align: middle
 		padding-left: 13px
 		font-size: 16px
-		color: #fff
+		color: $white
 		+r(1280)
 			display: block
 			text-align: center 						  		 	 
 .m-gallery
 	padding: 35px 0 65px
-	background: #e6edf6 
+	background: $gray4 
 	.title
 		margin-bottom: 40px 			  	
 			
@@ -1450,7 +1450,7 @@
 		max-width: 1200px
 		margin: 0 auto
 		padding: 0 20px 
-		background: #fff
+		background: $white
 		padding-bottom: 100px 
 	.content
 		overflow: hidden 
@@ -1585,7 +1585,7 @@
 		margin-left: 0  	 
 	p
 		font-size: 14px
-		color: #787878
+		color: $gray3
 		+opensans-sb
 		margin-bottom: 20px
 	img
@@ -1606,7 +1606,7 @@
 	.widget__title
 		font-size: 16px
 		+opensans-sb
-		color: #464646
+		color: $darkgrey
 		text-transform: uppercase
 		margin-bottom: 10px
 	&.widget_grey
@@ -1632,14 +1632,14 @@
 		width: 82px
 		height: 82px
 		border-radius: 50%
-		background: #fff
+		background: $white
 		box-shadow: 0 0 14px -5px rgba(#000, 0.5)
 		img
 			display: block
 			width: 100% 
 	p
 		margin-bottom: 0
-		color: #fff
+		color: $white
 		+opensans-eb
 		text-transform: uppercase  
 	
@@ -1656,7 +1656,7 @@
 			margin-bottom: 0
 		p
 			font-size: 18px
-			color: #464646
+			color: $darkgrey
 	.error__img
 		margin-bottom: 35px
 	.error__bottom
@@ -1722,14 +1722,14 @@
 		overflow: hidden
 		table
 			td
-				color: #464646
+				color: $darkgrey
 				font-size: 16px
 				+opensans-sb
 				line-height: 1.6
-				color: #787878 
+				color: $gray3 
 				&:first-child	
 					text-transform: uppercase
-					color: #464646 
+					color: $darkgrey 
 					p
 						margin-bottom: 10px
 		+r(568)
@@ -1738,7 +1738,7 @@
 		font-size: 0
 	.hero__content
 		font-size: 17px
-		color: #464646
+		color: $darkgrey
 		line-height: 1.6
 		ul
 			margin-bottom: 60px
@@ -1801,9 +1801,9 @@
 			margin-left: 10px
 			padding-left: 10px
 			font-size: 14px
-			color: #464646
+			color: $darkgrey
 			a
-				color: #464646
+				color: $darkgrey
 				text-decoration: none
 				&:hover
 					text-decoration: underline
@@ -1830,19 +1830,19 @@
 .article
 	padding: 30px 0
 	font-size: 16px
-	color: #464646
+	color: $darkgrey
 	line-height: 1.6
 	hr
 		display: block
 		width: 80px
 		height: 2px
-		background: #f67f41
+		background: $orange2
 		margin: 0 0 20px
-		border-color: #f67f41
+		border-color: $orange2
 	h3
 		margin-bottom: 30px
 		font-size: 20px
-		color: #464646
+		color: $darkgrey
 		+opensans-sb
 		text-transform: uppercase	
 	img
@@ -1905,7 +1905,7 @@
 		vertical-align: middle
 	.article-nav__block
 		.item
-			background: #e6edf6
+			background: $gray4
 			+r(1280)
 				width: 296px  
 			+r(767)
@@ -1919,7 +1919,7 @@
 			color: #7e7f80  		
 	.article-nav__prev
 		position: relative
-		border-right: 1px solid #fff
+		border-right: 1px solid $white
 		text-align: right
 		padding-right: 150px
 		.article-nav__arrow
@@ -1951,7 +1951,7 @@
 				display: none		 		  		
 	.article-nav__next
 		position: relative
-		border-left: 1px solid #fff
+		border-left: 1px solid $white
 		padding-left: 150px	 
 		.article-nav__arrow
 			margin-left: 150px
@@ -2037,13 +2037,13 @@
 				&.disabled
 					color: #bbb 
 				&.active
-					color: #fff
+					color: $white
 					background: #4e4daa
 
 .events-slider
 	.events-slider__item
 		font-size: 14px
-		color: #787878 
+		color: $gray3 
 	.events-slider__date
 		width: 180px
 		height: 180px
@@ -2058,7 +2058,7 @@
 			p
 				margin-bottom: 0 
 				+opensans-sb
-				color: #fff
+				color: $white
 				font-size: 16px
 				strong
 					font-size: 70px
@@ -2070,7 +2070,7 @@
 		text-align: left
 		+opensans-eb
 		font-size: 16px
-		color: #464646 			 
+		color: $darkgrey 			 
 .images
 	margin-left: -0.5%
 	+clr
@@ -2126,7 +2126,7 @@
 		background: #ebebeb
 		text-align: center
 		font-size: 17px
-		color: #464646	
+		color: $darkgrey	
 
 .programmers
 	.article
@@ -2135,14 +2135,14 @@
 	.programmers__title
 		margin-bottom: 10px
 		+opensans-sb
-		color: #464646
+		color: $darkgrey
 		font-size: 17px 
 	.programmers__text
 		margin-bottom: 30px
 		p
 			position: relative
 			padding-left: 30px 
-			color: #464646
+			color: $darkgrey
 			font-size: 17px 
 			margin-bottom: 10px
 			&:before
