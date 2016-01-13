@@ -2173,34 +2173,44 @@
         height: 13px
         border-radius: 50%
         background: #ea1d24
+//
+//.quotes__item
+//  &:not(.slick-active)
+//    .quotes__img
+//      width: 120px
+//      height: 120px
+//      margin: 0
+//    .quotes__right
+//      opacity: 0
+//    .quote__medals, .quote__person
+//      opacity: 0
+//      display: none
+//
+//  &.slick-active
+//    min-height: 300px
+//    .quotes__img
+//      transition: all .4s ease-in
+//      transform: translate3d(0,0,0)
+//    .quotes__right
+//      transition: all .3s ease-in .3s
+//      transform: translate3d(0,0,0)
+//    .quote__medals, .quote__person
+//      display: block
+//
+//  &.slick-slide-left
+//    .quotes__left
+//      position: fixed
+//      right: 0
+//  &.slick-slide-left, &.slick-slide-right
+//    .quotes__left
+//      margin-top: 80px
+
+
 
 .quotes__item
-  &:not(.slick-active)
-    .quotes__img
-      width: 120px
-      height: 120px
-      margin: 0
-    .quotes__right
-      opacity: 0
-    .quote__medals, .quote__person
-      opacity: 0
-      display: none
+  transition: transform .25s ease-in
+  transform: scale3d(.3,.3,1) translate3d(0,0,0)
+  transform-origin: 0 center
 
-  &.slick-active
-    min-height: 300px
-    .quotes__img
-      transition: all .4s ease-in
-      transform: translate3d(0,0,0)
-    .quotes__right
-      transition: all .3s ease-in .3s
-      transform: translate3d(0,0,0)
-    .quote__medals, .quote__person
-      display: block
-
-  &.slick-slide-left
-    .quotes__left
-      position: fixed
-      right: 0
-  &.slick-slide-left, &.slick-slide-right
-    .quotes__left
-      margin-top: 80px
+  &.slick-center
+    transform: scale3d(1,1,1) translate3d(0,0,0)
