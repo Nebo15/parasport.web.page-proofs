@@ -650,15 +650,8 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .programmers .programmers__text p { position: relative; padding-left: 30px; color: #464646; font-size: 17px; margin-bottom: 10px; }
 .programmers .programmers__text p:before { content: ""; position: absolute; top: 5px; left: 0; width: 13px; height: 13px; -webkit-border-radius: 50%; border-radius: 50%; background: #ea1d24; }
 
-.quotes__item:not(.slick-active) .quotes__img { width: 120px; height: 120px; margin: 0; }
-.quotes__item:not(.slick-active) .quotes__right { opacity: 0; }
-.quotes__item:not(.slick-active) .quote__medals, .quotes__item:not(.slick-active) .quote__person { opacity: 0; display: none; }
-.quotes__item.slick-active { min-height: 300px; }
-.quotes__item.slick-active .quotes__img { -webkit-transition: all 0.4s ease-in; transition: all 0.4s ease-in; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-.quotes__item.slick-active .quotes__right { -webkit-transition: all 0.3s ease-in 0.3s; transition: all 0.3s ease-in 0.3s; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-.quotes__item.slick-active .quote__medals, .quotes__item.slick-active .quote__person { display: block; }
-.quotes__item.slick-slide-left .quotes__left { position: fixed; right: 0; }
-.quotes__item.slick-slide-left .quotes__left, .quotes__item.slick-slide-right .quotes__left { margin-top: 80px; }
+.quotes__item { -webkit-transition: -webkit-transform 0.25s ease-in; transition: -webkit-transform 0.25s ease-in; transition: transform 0.25s ease-in; transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; -webkit-transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); -webkit-transform-origin: 0 center; -ms-transform-origin: 0 center; transform-origin: 0 center; }
+.quotes__item.slick-center { -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0); transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
 
 .gallery { position: relative; overflow: auto; }
 .gallery__head { position: relative; background-size: cover; background-position: 50% 50%; }
