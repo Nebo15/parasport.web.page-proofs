@@ -650,8 +650,22 @@ body { font-family: "OpenSans"; font-weight: normal; font-style: normal; font-si
 .programmers .programmers__text p { position: relative; padding-left: 30px; color: #464646; font-size: 17px; margin-bottom: 10px; }
 .programmers .programmers__text p:before { content: ""; position: absolute; top: 5px; left: 0; width: 13px; height: 13px; -webkit-border-radius: 50%; border-radius: 50%; background: #ea1d24; }
 
-.quotes__item { -webkit-transition: -webkit-transform 0.25s ease-in; transition: -webkit-transform 0.25s ease-in; transition: transform 0.25s ease-in; transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; -webkit-transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); -webkit-transform-origin: 0 center; -ms-transform-origin: 0 center; transform-origin: 0 center; }
-.quotes__item.slick-center { -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0); transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+@-webkit-keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+@-webkit-keyframes scaleIn { from { -webkit-transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); }
+  to { -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0); transform: scale3d(1, 1, 1) translate3d(0, 0, 0); } }
+@keyframes scaleIn { from { -webkit-transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); }
+  to { -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0); transform: scale3d(1, 1, 1) translate3d(0, 0, 0); } }
+.quotes__item { -webkit-transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); transform: scale3d(0.3, 0.3, 1) translate3d(0, 0, 0); }
+.quotes__item.slick-slide-enter-left { -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; }
+.quotes__item.slick-slide-enter-right { -webkit-transform-origin: right center; -ms-transform-origin: right center; transform-origin: right center; }
+.quotes__item.slick-slide-right { -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; }
+.quotes__item.slick-center { -webkit-animation: scaleIn 0.3s ease-in; animation: scaleIn 0.3s ease-in; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.quotes__item.slick-center .quotes__right, .quotes__item.slick-center .quote__person, .quotes__item.slick-center .quote__medals { -webkit-animation: fadeIn 0.25s ease-in 0.1s; animation: fadeIn 0.25s ease-in 0.1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.quotes__item .quotes__right, .quotes__item .quote__person, .quotes__item .quote__medals { opacity: 0; }
 
 .gallery { position: relative; overflow: auto; }
 .gallery__head { position: relative; background-size: cover; background-position: 50% 50%; }

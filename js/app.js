@@ -2676,9 +2676,19 @@ $(document).ready(function() {
 
 	// quotes slider
 
-	$('.js-quotes').on('beforeChange init', function(event, slick, currentSlideIdx, nextSlideIdx){
-		$(slick.$slides).removeClass('slick-slide-enter');
-		$(slick.$slides[nextSlideIdx]).addClass('slick-slide-enter');
+	$('.js-quotes').on('init', function (event, slick) {
+		$(slick.$slides).click(function () {
+			slick.goTo($(slick.$slides).index(this));
+		});
+	}).on('beforeChange init', function(event, slick, currentSlideIdx, nextSlideIdx){
+		$(slick.$slides).removeClass('slick-slide-enter slick-slide-enter-right slick-slide-enter-left');
+
+		var nextSlide = $(slick.$slides[nextSlideIdx]);
+		nextSlide.addClass('slick-slide-enter');
+
+		if (nextSlide.hasClass('slick-slide-left')) nextSlide.addClass('slick-slide-enter-left');
+		else if (nextSlide.hasClass('slick-slide-right')) nextSlide.addClass('slick-slide-enter-right');
+
 	}).on('afterChange init', function (event, slick, currentSlideIdx) {
 		$(slick.$slides).removeClass('slick-slide-left slick-slide-right');
 		currentSlideIdx = currentSlideIdx || 0;
