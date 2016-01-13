@@ -2,30 +2,44 @@ $(document).ready(function() {
 
 	// quotes slider
 
-	$('.js-quotes').slick({
+	$('.js-quotes').on('beforeChange init', function(event, slick, prevSlide, currentSlide){
+		console.log('prev next', currentSlide);
+		currentSlide = currentSlide || 0;
+		$('.slick-slide', this).removeClass('slick-slide-left').removeClass('slick-slide-right');
+
+		var prevItem = $(this).find('.slick-slide[data-slick-index='+(currentSlide-1)+']'),
+			currentItem = $(this).find('.slick-slide[data-slick-index='+currentSlide+']'),
+			nextItem = $(this).find('.slick-slide[data-slick-index='+(currentSlide + 1)+']');
+
+		prevItem.addClass('slick-slide-left');
+		nextItem.addClass('slick-slide-right');
+
+	}).on('init', function () {
+		var self = this;
+
+		$('.slick-slide', this).click(function (e) {
+			e.preventDefault();
+
+			console.log('click', self, parseInt($(this).index()));
+			$(self).slick('slickGoTo', $(this).attr('data-slick-index'));
+		});
+	}).slick({
 		slidesToShow: 1,
 		dots: true,
+		centerMode: true,
+		centerPadding: '140px',
 		slidesToScroll: 1,
-		arrows: false
-	});
-	$('.js-quotes').on('afterChange', function(event, slick, currentSlide){
-		var prevIndex = currentSlide -1,
-			prevItem = $(this).find('.slick-slide[data-slick-index='+prevIndex+']'),
-			prevImg = prevItem.find('.quotes__img img').attr('src'),
-			nextIndex = currentSlide + 1,
-			nextItem = $(this).find('.slick-slide[data-slick-index='+nextIndex+']'),
-			nextImg = nextItem.find('.quotes__img img').attr('src');
-		$('.js-quotes-prev').find('img').attr('src', prevImg);
-		$('.js-quotes-next').find('img').attr('src', nextImg);
-	});
-
-	$('.js-quotes-prev').on('click', function(){
-		$('.js-quotes').slick('slickPrev');
-	});
-	$('.js-quotes-next').on('click', function(){
-		$('.js-quotes').slick('slickNext');
-	});
-
+		arrows: false,
+		adaptiveHeight: true,
+		responsive: [
+			{
+				breakpoint: 480,
+				settings: {
+					centerPadding: '60px'
+				}
+			}
+		]
+	})
 	// carousel
 
 	$('.js-carousel').slick({
